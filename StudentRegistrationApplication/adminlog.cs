@@ -16,5 +16,30 @@ namespace StudentRegistrationApplication
         {
             InitializeComponent();
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_Login_Click(object sender, EventArgs e)
+        {
+            
+            if (txtUserName.Text == "admin" && txtPassword.Text == "admin") 
+            { 
+                this.Hide();
+                MessageBox.Show("You have successfully logged in.");
+           
+            }
+            else 
+            {
+                MessageBox.Show("Account invalid. Please try again.");
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
