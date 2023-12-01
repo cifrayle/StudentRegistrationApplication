@@ -10,18 +10,23 @@ using System.Windows.Forms;
 
 namespace StudentRegistrationApplication
 {
-    public partial class Form1 : Form
+    public partial class adminDashboard : Form
     {
-        public Form1()
+        public adminDashboard()
         {
             InitializeComponent();
+        }
+
+        private void admindashboard_Load(object sender, EventArgs e)
+        {
+
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            adminlog adminlog = new adminlog();
-            adminlog.ShowDialog();
+            Form1 form = new Form1();
+            form.ShowDialog();
         }
     }
 }

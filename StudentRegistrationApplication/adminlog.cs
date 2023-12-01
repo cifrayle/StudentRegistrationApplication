@@ -24,12 +24,13 @@ namespace StudentRegistrationApplication
 
         private void btn_Login_Click(object sender, EventArgs e)
         {
-            
+            adminDashboard admindash = new adminDashboard();
+
             if (txtUserName.Text == "admin" && txtPassword.Text == "admin") 
             { 
                 this.Hide();
                 MessageBox.Show("You have successfully logged in.");
-           
+                admindash.Show();
             }
             else 
             {

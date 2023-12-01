@@ -16,7 +16,7 @@ namespace StudentRegistrationApplication
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new adminlog());
+            Application.Run(new Form1());
         }
     }
 }
