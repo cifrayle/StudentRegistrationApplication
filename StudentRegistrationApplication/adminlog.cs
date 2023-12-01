@@ -40,7 +40,9 @@ namespace StudentRegistrationApplication
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
+            Form1 form = new Form1();
+            form.ShowDialog();
         }
     }
 }
