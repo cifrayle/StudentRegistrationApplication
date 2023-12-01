@@ -44,5 +44,10 @@ namespace StudentRegistrationApplication
             Form1 form = new Form1();
             form.ShowDialog();
         }
+
+        private void adminlog_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

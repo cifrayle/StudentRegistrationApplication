@@ -25,8 +25,8 @@ namespace StudentRegistrationApplication
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form1 form = new Form1();
-            form.ShowDialog();
+            adminlog adminlog = new adminlog();
+            adminlog.ShowDialog();
         }
     }
 }
