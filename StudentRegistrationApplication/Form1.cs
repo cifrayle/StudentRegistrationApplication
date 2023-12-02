@@ -23,5 +23,10 @@ namespace StudentRegistrationApplication
             adminlog adminlog = new adminlog();
             adminlog.ShowDialog();
         }
+
+        private void btn_exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
