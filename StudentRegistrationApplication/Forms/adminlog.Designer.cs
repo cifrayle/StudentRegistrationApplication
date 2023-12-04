@@ -33,11 +33,12 @@
             this.txtUserName = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.btn_Login = new System.Windows.Forms.Button();
+            this.btn_exitBack = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btn_Login = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.pnl_top = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -97,6 +98,36 @@
             this.flowLayoutPanel2.Size = new System.Drawing.Size(236, 1);
             this.flowLayoutPanel2.TabIndex = 6;
             // 
+            // btn_Login
+            // 
+            this.btn_Login.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(92)))), ((int)(((byte)(170)))));
+            this.btn_Login.FlatAppearance.BorderSize = 0;
+            this.btn_Login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Login.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Login.ForeColor = System.Drawing.Color.White;
+            this.btn_Login.Location = new System.Drawing.Point(24, 357);
+            this.btn_Login.Name = "btn_Login";
+            this.btn_Login.Size = new System.Drawing.Size(236, 34);
+            this.btn_Login.TabIndex = 8;
+            this.btn_Login.Text = "LOG IN";
+            this.btn_Login.UseVisualStyleBackColor = false;
+            this.btn_Login.Click += new System.EventHandler(this.btn_Login_Click);
+            // 
+            // btn_exitBack
+            // 
+            this.btn_exitBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(230)))), ((int)(((byte)(248)))));
+            this.btn_exitBack.FlatAppearance.BorderSize = 0;
+            this.btn_exitBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_exitBack.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_exitBack.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(92)))), ((int)(((byte)(170)))));
+            this.btn_exitBack.Location = new System.Drawing.Point(99, 397);
+            this.btn_exitBack.Name = "btn_exitBack";
+            this.btn_exitBack.Size = new System.Drawing.Size(84, 34);
+            this.btn_exitBack.TabIndex = 9;
+            this.btn_exitBack.Text = "EXIT";
+            this.btn_exitBack.UseVisualStyleBackColor = false;
+            this.btn_exitBack.Click += new System.EventHandler(this.button1_Click);
+            // 
             // pictureBox3
             // 
             this.pictureBox3.Image = global::StudentRegistrationApplication.Properties.Resources.padlock;
@@ -127,35 +158,15 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // btn_Login
+            // pnl_top
             // 
-            this.btn_Login.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(92)))), ((int)(((byte)(170)))));
-            this.btn_Login.FlatAppearance.BorderSize = 0;
-            this.btn_Login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Login.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Login.ForeColor = System.Drawing.Color.White;
-            this.btn_Login.Location = new System.Drawing.Point(24, 357);
-            this.btn_Login.Name = "btn_Login";
-            this.btn_Login.Size = new System.Drawing.Size(236, 34);
-            this.btn_Login.TabIndex = 8;
-            this.btn_Login.Text = "LOG IN";
-            this.btn_Login.UseVisualStyleBackColor = false;
-            this.btn_Login.Click += new System.EventHandler(this.btn_Login_Click);
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(230)))), ((int)(((byte)(248)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(92)))), ((int)(((byte)(170)))));
-            this.button1.Location = new System.Drawing.Point(114, 397);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(58, 34);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "EXIT";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.pnl_top.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnl_top.Location = new System.Drawing.Point(0, 0);
+            this.pnl_top.Name = "pnl_top";
+            this.pnl_top.Size = new System.Drawing.Size(292, 24);
+            this.pnl_top.TabIndex = 10;
+            this.pnl_top.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            this.pnl_top.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnl_top_MouseDown);
             // 
             // adminlog
             // 
@@ -163,7 +174,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(230)))), ((int)(((byte)(248)))));
             this.ClientSize = new System.Drawing.Size(292, 447);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.pnl_top);
+            this.Controls.Add(this.btn_exitBack);
             this.Controls.Add(this.btn_Login);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.flowLayoutPanel2);
@@ -175,6 +187,7 @@
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "adminlog";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.Load += new System.EventHandler(this.adminlog_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -196,6 +209,7 @@
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Button btn_Login;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_exitBack;
+        private System.Windows.Forms.Panel pnl_top;
     }
 }

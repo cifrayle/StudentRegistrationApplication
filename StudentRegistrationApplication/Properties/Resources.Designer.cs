@@ -93,6 +93,16 @@ namespace StudentRegistrationApplication.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_close_24__1_ {
+            get {
+                object obj = ResourceManager.GetObject("icons8-close-24 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_contract_32 {
             get {
                 object obj = ResourceManager.GetObject("icons8-contract-32", resourceCulture);
@@ -136,6 +146,66 @@ namespace StudentRegistrationApplication.Properties {
         internal static System.Drawing.Bitmap icons8_log_out_32 {
             get {
                 object obj = ResourceManager.GetObject("icons8-log-out-32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_maximize_24 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-maximize-24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_maximize_24__1_ {
+            get {
+                object obj = ResourceManager.GetObject("icons8-maximize-24 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_maximize_28 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-maximize-28", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_maximize_32 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-maximize-32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_maximize_50 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-maximize-50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_minimize_24 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-minimize-24", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
