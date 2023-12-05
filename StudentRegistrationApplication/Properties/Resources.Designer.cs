@@ -263,6 +263,16 @@ namespace StudentRegistrationApplication.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap sti_logo_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("sti_logo-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap student_white {
             get {
                 object obj = ResourceManager.GetObject("student-white", resourceCulture);

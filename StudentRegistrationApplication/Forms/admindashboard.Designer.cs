@@ -31,22 +31,29 @@
             this.sidePanel = new System.Windows.Forms.Panel();
             this.topPanel = new System.Windows.Forms.Panel();
             this.homePanel = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.btn_Exit = new System.Windows.Forms.Button();
             this.btn_Logout = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btn_homePage = new System.Windows.Forms.Button();
             this.btn_Enrolled = new System.Windows.Forms.Button();
             this.btn_Registered = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.btn_Exit = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.admin = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.sidePanel.SuspendLayout();
             this.topPanel.SuspendLayout();
+            this.homePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // sidePanel
             // 
             this.sidePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(105)))), ((int)(((byte)(209)))));
+            this.sidePanel.Controls.Add(this.admin);
             this.sidePanel.Controls.Add(this.btn_Logout);
             this.sidePanel.Controls.Add(this.pictureBox1);
             this.sidePanel.Controls.Add(this.btn_homePage);
@@ -75,6 +82,9 @@
             // 
             // homePanel
             // 
+            this.homePanel.Controls.Add(this.label2);
+            this.homePanel.Controls.Add(this.pictureBox2);
+            this.homePanel.Controls.Add(this.label1);
             this.homePanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.homePanel.Location = new System.Drawing.Point(244, 30);
             this.homePanel.MinimumSize = new System.Drawing.Size(524, 318);
@@ -82,57 +92,6 @@
             this.homePanel.Size = new System.Drawing.Size(740, 551);
             this.homePanel.TabIndex = 2;
             this.homePanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.mainPanel_MouseDown);
-            // 
-            // button2
-            // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(137)))), ((int)(((byte)(243)))));
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Bahnschrift", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Image = global::StudentRegistrationApplication.Properties.Resources.icons8_maximize_28;
-            this.button2.Location = new System.Drawing.Point(898, -3);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(40, 33);
-            this.button2.TabIndex = 15;
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button1
-            // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(137)))), ((int)(((byte)(243)))));
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Bahnschrift", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = global::StudentRegistrationApplication.Properties.Resources.icons8_minimize_24;
-            this.button1.Location = new System.Drawing.Point(852, -3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(40, 33);
-            this.button1.TabIndex = 14;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // btn_Exit
-            // 
-            this.btn_Exit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_Exit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(137)))), ((int)(((byte)(243)))));
-            this.btn_Exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btn_Exit.FlatAppearance.BorderSize = 0;
-            this.btn_Exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Exit.Font = new System.Drawing.Font("Bahnschrift", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Exit.ForeColor = System.Drawing.Color.White;
-            this.btn_Exit.Image = global::StudentRegistrationApplication.Properties.Resources.icons8_close_24;
-            this.btn_Exit.Location = new System.Drawing.Point(944, -3);
-            this.btn_Exit.Name = "btn_Exit";
-            this.btn_Exit.Size = new System.Drawing.Size(40, 33);
-            this.btn_Exit.TabIndex = 13;
-            this.btn_Exit.UseVisualStyleBackColor = false;
-            this.btn_Exit.Click += new System.EventHandler(this.button4_Click);
             // 
             // btn_Logout
             // 
@@ -144,7 +103,7 @@
             this.btn_Logout.ForeColor = System.Drawing.Color.White;
             this.btn_Logout.Image = global::StudentRegistrationApplication.Properties.Resources.icons8_log_out_32;
             this.btn_Logout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Logout.Location = new System.Drawing.Point(12, 348);
+            this.btn_Logout.Location = new System.Drawing.Point(12, 369);
             this.btn_Logout.Name = "btn_Logout";
             this.btn_Logout.Size = new System.Drawing.Size(210, 39);
             this.btn_Logout.TabIndex = 12;
@@ -172,7 +131,7 @@
             this.btn_homePage.ForeColor = System.Drawing.Color.White;
             this.btn_homePage.Image = global::StudentRegistrationApplication.Properties.Resources.icons8_home_32;
             this.btn_homePage.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_homePage.Location = new System.Drawing.Point(12, 201);
+            this.btn_homePage.Location = new System.Drawing.Point(12, 222);
             this.btn_homePage.Name = "btn_homePage";
             this.btn_homePage.Size = new System.Drawing.Size(210, 39);
             this.btn_homePage.TabIndex = 9;
@@ -190,7 +149,7 @@
             this.btn_Enrolled.ForeColor = System.Drawing.Color.White;
             this.btn_Enrolled.Image = global::StudentRegistrationApplication.Properties.Resources.icons8_contract_32;
             this.btn_Enrolled.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Enrolled.Location = new System.Drawing.Point(12, 299);
+            this.btn_Enrolled.Location = new System.Drawing.Point(12, 320);
             this.btn_Enrolled.Name = "btn_Enrolled";
             this.btn_Enrolled.Size = new System.Drawing.Size(210, 39);
             this.btn_Enrolled.TabIndex = 11;
@@ -208,13 +167,106 @@
             this.btn_Registered.ForeColor = System.Drawing.Color.White;
             this.btn_Registered.Image = global::StudentRegistrationApplication.Properties.Resources.icons8_student_32;
             this.btn_Registered.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Registered.Location = new System.Drawing.Point(12, 250);
+            this.btn_Registered.Location = new System.Drawing.Point(12, 271);
             this.btn_Registered.Name = "btn_Registered";
             this.btn_Registered.Size = new System.Drawing.Size(210, 39);
             this.btn_Registered.TabIndex = 10;
             this.btn_Registered.Text = "   Registered";
             this.btn_Registered.UseVisualStyleBackColor = false;
             this.btn_Registered.Click += new System.EventHandler(this.btn_Registered_Click);
+            // 
+            // button2
+            // 
+            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(137)))), ((int)(((byte)(243)))));
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Bahnschrift", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Image = global::StudentRegistrationApplication.Properties.Resources.icons8_maximize_28;
+            this.button2.Location = new System.Drawing.Point(898, -3);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(40, 33);
+            this.button2.TabIndex = 15;
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // btn_Exit
+            // 
+            this.btn_Exit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_Exit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(137)))), ((int)(((byte)(243)))));
+            this.btn_Exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btn_Exit.FlatAppearance.BorderSize = 0;
+            this.btn_Exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Exit.Font = new System.Drawing.Font("Bahnschrift", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Exit.ForeColor = System.Drawing.Color.White;
+            this.btn_Exit.Image = global::StudentRegistrationApplication.Properties.Resources.icons8_close_24;
+            this.btn_Exit.Location = new System.Drawing.Point(944, -3);
+            this.btn_Exit.Name = "btn_Exit";
+            this.btn_Exit.Size = new System.Drawing.Size(40, 33);
+            this.btn_Exit.TabIndex = 13;
+            this.btn_Exit.UseVisualStyleBackColor = false;
+            this.btn_Exit.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button1
+            // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(137)))), ((int)(((byte)(243)))));
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Bahnschrift", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Image = global::StudentRegistrationApplication.Properties.Resources.icons8_minimize_24;
+            this.button1.Location = new System.Drawing.Point(852, -3);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(40, 33);
+            this.button1.TabIndex = 14;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // admin
+            // 
+            this.admin.AutoSize = true;
+            this.admin.BackColor = System.Drawing.Color.Transparent;
+            this.admin.Font = new System.Drawing.Font("Bauhaus 93", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.admin.ForeColor = System.Drawing.Color.White;
+            this.admin.Location = new System.Drawing.Point(62, 138);
+            this.admin.Name = "admin";
+            this.admin.Size = new System.Drawing.Size(123, 38);
+            this.admin.TabIndex = 3;
+            this.admin.Text = "ADMIN";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Bookman Old Style", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(233, 387);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(262, 28);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "By: Cian and Nickos";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::StudentRegistrationApplication.Properties.Resources.sti_logo_removebg_preview;
+            this.pictureBox2.Location = new System.Drawing.Point(178, 66);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(352, 274);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 6;
+            this.pictureBox2.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Bookman Old Style", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(37, 343);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(654, 44);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Student Registration Application";
             // 
             // adminDashboard
             // 
@@ -233,8 +285,12 @@
             this.Text = "admindashboard";
             this.Load += new System.EventHandler(this.admindashboard_Load);
             this.sidePanel.ResumeLayout(false);
+            this.sidePanel.PerformLayout();
             this.topPanel.ResumeLayout(false);
+            this.homePanel.ResumeLayout(false);
+            this.homePanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -252,5 +308,9 @@
         private System.Windows.Forms.Button btn_Exit;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label admin;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label label1;
     }
 }

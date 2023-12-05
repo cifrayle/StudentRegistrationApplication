@@ -30,10 +30,14 @@
         {
             this.button1 = new System.Windows.Forms.Button();
             this.btn_exit = new System.Windows.Forms.Button();
-            this.listbx_Name = new System.Windows.Forms.ListBox();
+            this.lbx_FirstName = new System.Windows.Forms.ListBox();
             this.button2 = new System.Windows.Forms.Button();
-            this.tb_Name = new System.Windows.Forms.TextBox();
+            this.tb_FirstName = new System.Windows.Forms.TextBox();
             this.lbl_Name = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.tb_LastName = new System.Windows.Forms.TextBox();
+            this.lbx_LastName = new System.Windows.Forms.ListBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
@@ -56,17 +60,18 @@
             this.btn_exit.UseVisualStyleBackColor = true;
             this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
             // 
-            // listbx_Name
+            // lbx_FirstName
             // 
-            this.listbx_Name.FormattingEnabled = true;
-            this.listbx_Name.Location = new System.Drawing.Point(345, 230);
-            this.listbx_Name.Name = "listbx_Name";
-            this.listbx_Name.Size = new System.Drawing.Size(169, 147);
-            this.listbx_Name.TabIndex = 2;
+            this.lbx_FirstName.FormattingEnabled = true;
+            this.lbx_FirstName.Location = new System.Drawing.Point(245, 224);
+            this.lbx_FirstName.Name = "lbx_FirstName";
+            this.lbx_FirstName.Size = new System.Drawing.Size(106, 147);
+            this.lbx_FirstName.TabIndex = 2;
+            this.lbx_FirstName.SelectedIndexChanged += new System.EventHandler(this.listbx_FirstName_SelectedIndexChanged);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(385, 388);
+            this.button2.Location = new System.Drawing.Point(324, 388);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(85, 24);
             this.button2.TabIndex = 3;
@@ -74,21 +79,55 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // tb_Name
+            // tb_FirstName
             // 
-            this.tb_Name.Location = new System.Drawing.Point(345, 183);
-            this.tb_Name.Name = "tb_Name";
-            this.tb_Name.Size = new System.Drawing.Size(169, 20);
-            this.tb_Name.TabIndex = 4;
+            this.tb_FirstName.Location = new System.Drawing.Point(245, 198);
+            this.tb_FirstName.Name = "tb_FirstName";
+            this.tb_FirstName.Size = new System.Drawing.Size(106, 20);
+            this.tb_FirstName.TabIndex = 4;
             // 
             // lbl_Name
             // 
             this.lbl_Name.AutoSize = true;
-            this.lbl_Name.Location = new System.Drawing.Point(342, 167);
+            this.lbl_Name.Location = new System.Drawing.Point(242, 173);
             this.lbl_Name.Name = "lbl_Name";
-            this.lbl_Name.Size = new System.Drawing.Size(84, 13);
+            this.lbl_Name.Size = new System.Drawing.Size(103, 13);
             this.lbl_Name.TabIndex = 5;
-            this.lbl_Name.Text = "Enter your name";
+            this.lbl_Name.Text = "Enter your first name";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(382, 173);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(56, 13);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Last name";
+            // 
+            // tb_LastName
+            // 
+            this.tb_LastName.Location = new System.Drawing.Point(385, 198);
+            this.tb_LastName.Name = "tb_LastName";
+            this.tb_LastName.Size = new System.Drawing.Size(106, 20);
+            this.tb_LastName.TabIndex = 7;
+            // 
+            // lbx_LastName
+            // 
+            this.lbx_LastName.FormattingEnabled = true;
+            this.lbx_LastName.Location = new System.Drawing.Point(385, 224);
+            this.lbx_LastName.Name = "lbx_LastName";
+            this.lbx_LastName.Size = new System.Drawing.Size(106, 147);
+            this.lbx_LastName.TabIndex = 6;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(242, 132);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(237, 18);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "FORM NI NICKOS (DI PA TAPOS)";
             // 
             // Form1
             // 
@@ -96,10 +135,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(230)))), ((int)(((byte)(248)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.tb_LastName);
+            this.Controls.Add(this.lbx_LastName);
             this.Controls.Add(this.lbl_Name);
-            this.Controls.Add(this.tb_Name);
+            this.Controls.Add(this.tb_FirstName);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.listbx_Name);
+            this.Controls.Add(this.lbx_FirstName);
             this.Controls.Add(this.btn_exit);
             this.Controls.Add(this.button1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -115,10 +158,14 @@
 
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btn_exit;
-        private System.Windows.Forms.ListBox listbx_Name;
+        private System.Windows.Forms.ListBox lbx_FirstName;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox tb_Name;
+        private System.Windows.Forms.TextBox tb_FirstName;
         private System.Windows.Forms.Label lbl_Name;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox tb_LastName;
+        private System.Windows.Forms.ListBox lbx_LastName;
+        private System.Windows.Forms.Label label2;
     }
 }
 

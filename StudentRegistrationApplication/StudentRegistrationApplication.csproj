@@ -191,5 +191,8 @@
   <ItemGroup>
     <None Include="Resources\icons8-maximize-28.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sti_logo-removebg-preview.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
