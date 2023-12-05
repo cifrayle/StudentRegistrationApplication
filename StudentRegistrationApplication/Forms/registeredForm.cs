@@ -21,5 +21,10 @@ namespace StudentRegistrationApplication
         {
 
         }
+
+        private void lb_Registered_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            lb_Registered.Text = Form1.name;
+        }
     }
 }

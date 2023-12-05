@@ -32,7 +32,7 @@ namespace StudentRegistrationApplication
             form.BringToFront();
             form.Show();
         }
-        // For hovering around the form
+        // For hovering the form around
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
 

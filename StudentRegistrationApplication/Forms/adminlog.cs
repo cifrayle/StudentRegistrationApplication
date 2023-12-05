@@ -34,10 +34,11 @@ namespace StudentRegistrationApplication
             if (txtUserName.Text == "admin" && txtPassword.Text == "admin")
             {
                 this.Hide();
-                MessageBox.Show("You have successfully logged in.", "System", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                //MessageBox.Show("You have successfully logged in.", "System", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 adminDashboard admindash = new adminDashboard();
                 admindash.Show();
             }
+            // this line won't display anything if the user entered an empty text.
             else if (txtUserName.Text == "" && txtPassword.Text == "")
             {
                 this.Show();

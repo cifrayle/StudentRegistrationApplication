@@ -12,6 +12,7 @@ namespace StudentRegistrationApplication
 {
     public partial class Form1 : Form
     {
+        public static string name = "";
         public Form1()
         {
             InitializeComponent();
@@ -27,6 +28,13 @@ namespace StudentRegistrationApplication
         private void btn_exit_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            name = tb_Name.Text;
+            listbx_Name.Items.Add(name);
+
         }
     }
 }
