@@ -69,6 +69,10 @@ namespace StudentRegistrationApplication
         {
 
         }
+        private void button_WOC1_Click(object sender, EventArgs e)
+        {
+
+        }
 
         private void fName_TextChanged(object sender, EventArgs e)
         {
@@ -139,10 +143,7 @@ namespace StudentRegistrationApplication
             }
         }
 
-        private void button_WOC1_Click(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void button_WOC2_Click_1(object sender, EventArgs e)
         {
