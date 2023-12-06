@@ -105,7 +105,12 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Resources\2560px-45_Star_US_Flag.svg.png" />
+    <Content Include="Resources\avatar-1968236_640.png" />
+    <Content Include="Resources\avatar-3814049_640.png" />
+    <None Include="Resources\avatar-3814049_6401.png" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Resources\calendarDark.png" />
   </ItemGroup>
