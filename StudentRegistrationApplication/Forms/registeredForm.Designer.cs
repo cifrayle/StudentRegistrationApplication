@@ -163,6 +163,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "registeredForm";
             this.Text = "registeredForm";
+            this.Load += new System.EventHandler(this.registeredForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

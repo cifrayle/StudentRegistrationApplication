@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.sidePanel = new System.Windows.Forms.Panel();
+            this.panel_Side = new System.Windows.Forms.Panel();
             this.admin = new System.Windows.Forms.Label();
             this.btn_Logout = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -43,7 +44,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel_Side = new System.Windows.Forms.Panel();
             this.sidePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.topPanel.SuspendLayout();
@@ -67,6 +67,15 @@
             this.sidePanel.Size = new System.Drawing.Size(244, 551);
             this.sidePanel.TabIndex = 0;
             this.sidePanel.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // panel_Side
+            // 
+            this.panel_Side.BackColor = System.Drawing.Color.White;
+            this.panel_Side.ForeColor = System.Drawing.Color.White;
+            this.panel_Side.Location = new System.Drawing.Point(1, 223);
+            this.panel_Side.Name = "panel_Side";
+            this.panel_Side.Size = new System.Drawing.Size(10, 43);
+            this.panel_Side.TabIndex = 8;
             // 
             // admin
             // 
@@ -238,6 +247,7 @@
             this.homePanel.Name = "homePanel";
             this.homePanel.Size = new System.Drawing.Size(740, 551);
             this.homePanel.TabIndex = 2;
+            this.homePanel.Paint += new System.Windows.Forms.PaintEventHandler(this.homePanel_Paint);
             this.homePanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.mainPanel_MouseDown);
             // 
             // label2
@@ -269,15 +279,6 @@
             this.label1.Size = new System.Drawing.Size(654, 44);
             this.label1.TabIndex = 5;
             this.label1.Text = "Student Registration Application";
-            // 
-            // panel_Side
-            // 
-            this.panel_Side.BackColor = System.Drawing.Color.White;
-            this.panel_Side.ForeColor = System.Drawing.Color.White;
-            this.panel_Side.Location = new System.Drawing.Point(1, 223);
-            this.panel_Side.Name = "panel_Side";
-            this.panel_Side.Size = new System.Drawing.Size(10, 43);
-            this.panel_Side.TabIndex = 8;
             // 
             // adminDashboard
             // 

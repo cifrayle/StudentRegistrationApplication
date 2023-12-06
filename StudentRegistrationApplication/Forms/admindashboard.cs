@@ -123,5 +123,10 @@ namespace StudentRegistrationApplication
             panel_Side.Top = btn_Enrolled.Top;
             loadForm(new enrolledForm());
         }
+
+        private void homePanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

@@ -52,9 +52,7 @@ namespace StudentRegistrationApplication
         private void button1_Click(object sender, EventArgs e)
         {
             // exit the login form. go back to student registration form
-            this.Hide();
-            Form1 form = new Form1();
-            form.ShowDialog();
+           Application.Exit();
         }
 
         private void adminlog_Load(object sender, EventArgs e)
