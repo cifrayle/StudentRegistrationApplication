@@ -48,9 +48,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.rjRadioButton1 = new StudentRegistrationApplication.CustomControls.RJRadioButton();
             this.rjRadioButton2 = new StudentRegistrationApplication.CustomControls.RJRadioButton();
+            this.button_WOC3 = new ePOSOne.btnProduct.Button_WOC();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
+            this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -187,6 +189,7 @@
             // 
             // panel6
             // 
+            this.panel6.Controls.Add(this.button_WOC3);
             this.panel6.Location = new System.Drawing.Point(3, 351);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(170, 50);
@@ -299,6 +302,21 @@
             this.rjRadioButton2.UnCheckedColor = System.Drawing.Color.Gray;
             this.rjRadioButton2.UseVisualStyleBackColor = true;
             // 
+            // button_WOC3
+            // 
+            this.button_WOC3.BorderColor = System.Drawing.Color.Silver;
+            this.button_WOC3.ButtonColor = System.Drawing.Color.Red;
+            this.button_WOC3.Location = new System.Drawing.Point(13, 10);
+            this.button_WOC3.Name = "button_WOC3";
+            this.button_WOC3.OnHoverBorderColor = System.Drawing.Color.Gray;
+            this.button_WOC3.OnHoverButtonColor = System.Drawing.Color.Yellow;
+            this.button_WOC3.OnHoverTextColor = System.Drawing.Color.Gray;
+            this.button_WOC3.Size = new System.Drawing.Size(109, 37);
+            this.button_WOC3.TabIndex = 14;
+            this.button_WOC3.Text = "button_WOC3";
+            this.button_WOC3.TextColor = System.Drawing.Color.White;
+            this.button_WOC3.UseVisualStyleBackColor = true;
+            // 
             // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -320,6 +338,7 @@
             this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            this.panel6.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.ResumeLayout(false);
@@ -357,6 +376,7 @@
         private ePOSOne.btnProduct.Button_WOC button_WOC1;
         private CustomControls.RJRadioButton rjRadioButton1;
         private CustomControls.RJRadioButton rjRadioButton2;
+        private ePOSOne.btnProduct.Button_WOC button_WOC3;
     }
 }
 
