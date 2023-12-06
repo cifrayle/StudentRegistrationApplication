@@ -143,6 +143,16 @@ namespace StudentRegistrationApplication
         {
 
         }
+
+        private void button_WOC2_Click_1(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.BringToFront();
+        }
     }
 }
 

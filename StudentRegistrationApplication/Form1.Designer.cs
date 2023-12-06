@@ -413,6 +413,7 @@
             this.button_WOC2.TabIndex = 13;
             this.button_WOC2.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(222)))), ((int)(((byte)(246)))));
             this.button_WOC2.UseVisualStyleBackColor = true;
+            this.button_WOC2.Click += new System.EventHandler(this.button_WOC2_Click_1);
             // 
             // Form1
             // 
