@@ -64,8 +64,21 @@ namespace StudentRegistrationApplication
         //this button will remove any selected items in the list
         private void btn_Login_Click(object sender, EventArgs e)
         {
-            // Check if an item is selected in either lbx_regFirstName or lbx_regLastName
-            if (lbx_regFirstName.SelectedItem != null || lbx_regLastName.SelectedItem != null)
+            /* Check if an item is selected in lbx_ProgramApplied
+            if (lbx_ProgramApplied.SelectedItem != null)
+            {
+                // Get the selected index
+                int selectedIndex = lbx_ProgramApplied.SelectedIndex;
+
+                // Remove the selected item from lbx_ProgramApplied
+                lbx_ProgramApplied.Items.RemoveAt(selectedIndex);
+
+                // Remove the corresponding items from lbx_regFirstName and lbx_regLastName
+                lbx_regFirstName.Items.RemoveAt(selectedIndex);
+                lbx_regLastName.Items.RemoveAt(selectedIndex);
+            } */
+                // Check if an item is selected in either lbx_regFirstName or lbx_regLastName
+                if (lbx_regFirstName.SelectedItem != null || lbx_regLastName.SelectedItem != null)
             {
                 // Get the selected index from either lbx_regFirstName or lbx_regLastName
                 int selectedIndex = (lbx_regFirstName.SelectedItem != null)
@@ -75,6 +88,27 @@ namespace StudentRegistrationApplication
                 // Remove the items at the selected index from both lbx_regFirstName and lbx_regLastName
                 lbx_regFirstName.Items.RemoveAt(selectedIndex);
                 lbx_regLastName.Items.RemoveAt(selectedIndex);
+            }
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            // Check if an item is selected in either lbx_regFirstName or lbx_regLastName
+            if (lbx_regFirstName.SelectedItem != null || lbx_regLastName.SelectedItem != null)
+            {
+                // Get the selected first name and last name
+                string selectedFirstName = (lbx_regFirstName.SelectedItem != null)
+                    ? lbx_regFirstName.SelectedItem.ToString()
+                    : string.Empty;
+
+                string selectedLastName = (lbx_regLastName.SelectedItem != null)
+                    ? lbx_regLastName.SelectedItem.ToString()
+                    : string.Empty;
+
+                // Add the selected first name and last name to the shared EnrollmentData
+                EnrollmentData.EnrolledFirstNameList.Add(selectedFirstName);
+                EnrollmentData.EnrolledLastNameList.Add(selectedLastName);
             }
 
         }

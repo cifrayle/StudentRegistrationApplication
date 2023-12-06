@@ -16,6 +16,8 @@ namespace StudentRegistrationApplication
         public adminDashboard()
         {
             InitializeComponent();
+            panel_Side.Height = btn_homePage.Height;
+            panel_Side.Top = btn_homePage.Top;
             this.Text = string.Empty;
             this.ControlBox = false;
         }
@@ -102,16 +104,23 @@ namespace StudentRegistrationApplication
 
         private void btn_homePage_Click(object sender, EventArgs e)
         {
+            panel_Side.Height = btn_homePage.Height;
+            panel_Side.Top = btn_homePage.Top;
             loadForm(new homePageForm());
+            
         }
 
         private void btn_Registered_Click(object sender, EventArgs e)
         {
+            panel_Side.Height = btn_Registered.Height;
+            panel_Side.Top = btn_Registered.Top;
             loadForm(new registeredForm());
         }
 
         private void btn_Enrolled_Click(object sender, EventArgs e)
         {
+            panel_Side.Height = btn_Enrolled.Height;
+            panel_Side.Top = btn_Enrolled.Top;
             loadForm(new enrolledForm());
         }
     }
