@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button_WOC2 = new ePOSOne.btnProduct.Button_WOC();
             this.panel2 = new System.Windows.Forms.Panel();
             this.mName = new System.Windows.Forms.TextBox();
             this.fName = new System.Windows.Forms.TextBox();
@@ -38,23 +39,22 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.female = new StudentRegistrationApplication.CustomControls.RJRadioButton();
+            this.male = new StudentRegistrationApplication.CustomControls.RJRadioButton();
             this.label5 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.date = new StudentRegistrationApplication.CustomControls.Customdatepicker();
             this.label6 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.registerBut = new ePOSOne.btnProduct.Button_WOC();
             this.panel5 = new System.Windows.Forms.Panel();
             this.program = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.button_WOC1 = new ePOSOne.btnProduct.Button_WOC();
             this.roundedPictureBox1 = new StudentRegistrationApplication.CustomControls.RJCircularPictureBox();
             this.uploadIMG = new ePOSOne.btnProduct.Button_WOC();
-            this.female = new StudentRegistrationApplication.CustomControls.RJRadioButton();
-            this.male = new StudentRegistrationApplication.CustomControls.RJRadioButton();
-            this.date = new StudentRegistrationApplication.CustomControls.Customdatepicker();
-            this.registerBut = new ePOSOne.btnProduct.Button_WOC();
-            this.button_WOC2 = new ePOSOne.btnProduct.Button_WOC();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -73,6 +73,22 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(668, 61);
             this.panel1.TabIndex = 0;
+            // 
+            // button_WOC2
+            // 
+            this.button_WOC2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(230)))), ((int)(((byte)(248)))));
+            this.button_WOC2.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.button_WOC2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_WOC2.Location = new System.Drawing.Point(633, 0);
+            this.button_WOC2.Name = "button_WOC2";
+            this.button_WOC2.OnHoverBorderColor = System.Drawing.Color.Gray;
+            this.button_WOC2.OnHoverButtonColor = System.Drawing.Color.Red;
+            this.button_WOC2.OnHoverTextColor = System.Drawing.Color.Gray;
+            this.button_WOC2.Size = new System.Drawing.Size(35, 22);
+            this.button_WOC2.TabIndex = 13;
+            this.button_WOC2.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(222)))), ((int)(((byte)(246)))));
+            this.button_WOC2.UseVisualStyleBackColor = true;
+            this.button_WOC2.Click += new System.EventHandler(this.button_WOC2_Click_1);
             // 
             // panel2
             // 
@@ -166,6 +182,40 @@
             this.panel3.Size = new System.Drawing.Size(388, 32);
             this.panel3.TabIndex = 1;
             // 
+            // female
+            // 
+            this.female.AutoSize = true;
+            this.female.CheckedColor = System.Drawing.Color.Plum;
+            this.female.ForeColor = System.Drawing.Color.Black;
+            this.female.Location = new System.Drawing.Point(147, 8);
+            this.female.MinimumSize = new System.Drawing.Size(0, 21);
+            this.female.Name = "female";
+            this.female.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.female.Size = new System.Drawing.Size(69, 21);
+            this.female.TabIndex = 13;
+            this.female.TabStop = true;
+            this.female.Text = "Female";
+            this.female.UnCheckedColor = System.Drawing.Color.Gray;
+            this.female.UseVisualStyleBackColor = true;
+            this.female.CheckedChanged += new System.EventHandler(this.female_CheckedChanged);
+            // 
+            // male
+            // 
+            this.male.AutoSize = true;
+            this.male.CheckedColor = System.Drawing.Color.CornflowerBlue;
+            this.male.ForeColor = System.Drawing.Color.Black;
+            this.male.Location = new System.Drawing.Point(83, 8);
+            this.male.MinimumSize = new System.Drawing.Size(0, 21);
+            this.male.Name = "male";
+            this.male.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.male.Size = new System.Drawing.Size(58, 21);
+            this.male.TabIndex = 12;
+            this.male.TabStop = true;
+            this.male.Text = "Male";
+            this.male.UnCheckedColor = System.Drawing.Color.Gray;
+            this.male.UseVisualStyleBackColor = true;
+            this.male.CheckedChanged += new System.EventHandler(this.male_CheckedChanged);
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -187,6 +237,20 @@
             this.panel4.Size = new System.Drawing.Size(388, 60);
             this.panel4.TabIndex = 2;
             // 
+            // date
+            // 
+            this.date.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.date.BorderSize = 0;
+            this.date.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F);
+            this.date.Location = new System.Drawing.Point(123, 11);
+            this.date.MinimumSize = new System.Drawing.Size(4, 35);
+            this.date.Name = "date";
+            this.date.Size = new System.Drawing.Size(226, 35);
+            this.date.SkinColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(92)))), ((int)(((byte)(170)))));
+            this.date.TabIndex = 14;
+            this.date.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(222)))), ((int)(((byte)(246)))));
+            this.date.ValueChanged += new System.EventHandler(this.date_ValueChanged);
+            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -205,6 +269,23 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(170, 50);
             this.panel6.TabIndex = 4;
+            // 
+            // registerBut
+            // 
+            this.registerBut.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(230)))), ((int)(((byte)(248)))));
+            this.registerBut.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(92)))), ((int)(((byte)(170)))));
+            this.registerBut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.registerBut.Location = new System.Drawing.Point(3, 0);
+            this.registerBut.Name = "registerBut";
+            this.registerBut.OnHoverBorderColor = System.Drawing.Color.Gray;
+            this.registerBut.OnHoverButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(92)))), ((int)(((byte)(170)))));
+            this.registerBut.OnHoverTextColor = System.Drawing.Color.Gray;
+            this.registerBut.Size = new System.Drawing.Size(160, 43);
+            this.registerBut.TabIndex = 0;
+            this.registerBut.Text = "Register student";
+            this.registerBut.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(222)))), ((int)(((byte)(246)))));
+            this.registerBut.UseVisualStyleBackColor = true;
+            this.registerBut.Click += new System.EventHandler(this.registerBut_Click);
             // 
             // panel5
             // 
@@ -271,17 +352,6 @@
             this.panel7.Size = new System.Drawing.Size(271, 421);
             this.panel7.TabIndex = 2;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Tahoma", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(7, 13);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(404, 35);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Student Registration Form";
-            // 
             // button_WOC1
             // 
             this.button_WOC1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(230)))), ((int)(((byte)(248)))));
@@ -334,86 +404,16 @@
             this.uploadIMG.UseVisualStyleBackColor = true;
             this.uploadIMG.Click += new System.EventHandler(this.button_WOC2_Click);
             // 
-            // female
+            // label1
             // 
-            this.female.AutoSize = true;
-            this.female.CheckedColor = System.Drawing.Color.Plum;
-            this.female.ForeColor = System.Drawing.Color.Black;
-            this.female.Location = new System.Drawing.Point(147, 8);
-            this.female.MinimumSize = new System.Drawing.Size(0, 21);
-            this.female.Name = "female";
-            this.female.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.female.Size = new System.Drawing.Size(69, 21);
-            this.female.TabIndex = 13;
-            this.female.TabStop = true;
-            this.female.Text = "Female";
-            this.female.UnCheckedColor = System.Drawing.Color.Gray;
-            this.female.UseVisualStyleBackColor = true;
-            this.female.CheckedChanged += new System.EventHandler(this.female_CheckedChanged);
-            // 
-            // male
-            // 
-            this.male.AutoSize = true;
-            this.male.CheckedColor = System.Drawing.Color.CornflowerBlue;
-            this.male.ForeColor = System.Drawing.Color.Black;
-            this.male.Location = new System.Drawing.Point(83, 8);
-            this.male.MinimumSize = new System.Drawing.Size(0, 21);
-            this.male.Name = "male";
-            this.male.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.male.Size = new System.Drawing.Size(58, 21);
-            this.male.TabIndex = 12;
-            this.male.TabStop = true;
-            this.male.Text = "Male";
-            this.male.UnCheckedColor = System.Drawing.Color.Gray;
-            this.male.UseVisualStyleBackColor = true;
-            this.male.CheckedChanged += new System.EventHandler(this.male_CheckedChanged);
-            // 
-            // date
-            // 
-            this.date.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.date.BorderSize = 0;
-            this.date.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F);
-            this.date.Location = new System.Drawing.Point(123, 11);
-            this.date.MinimumSize = new System.Drawing.Size(4, 35);
-            this.date.Name = "date";
-            this.date.Size = new System.Drawing.Size(226, 35);
-            this.date.SkinColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(92)))), ((int)(((byte)(170)))));
-            this.date.TabIndex = 14;
-            this.date.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(222)))), ((int)(((byte)(246)))));
-            this.date.ValueChanged += new System.EventHandler(this.date_ValueChanged);
-            // 
-            // registerBut
-            // 
-            this.registerBut.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(230)))), ((int)(((byte)(248)))));
-            this.registerBut.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(92)))), ((int)(((byte)(170)))));
-            this.registerBut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.registerBut.Location = new System.Drawing.Point(3, 0);
-            this.registerBut.Name = "registerBut";
-            this.registerBut.OnHoverBorderColor = System.Drawing.Color.Gray;
-            this.registerBut.OnHoverButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(92)))), ((int)(((byte)(170)))));
-            this.registerBut.OnHoverTextColor = System.Drawing.Color.Gray;
-            this.registerBut.Size = new System.Drawing.Size(160, 43);
-            this.registerBut.TabIndex = 0;
-            this.registerBut.Text = "Register student";
-            this.registerBut.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(222)))), ((int)(((byte)(246)))));
-            this.registerBut.UseVisualStyleBackColor = true;
-            this.registerBut.Click += new System.EventHandler(this.registerBut_Click);
-            // 
-            // button_WOC2
-            // 
-            this.button_WOC2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(230)))), ((int)(((byte)(248)))));
-            this.button_WOC2.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.button_WOC2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_WOC2.Location = new System.Drawing.Point(633, 0);
-            this.button_WOC2.Name = "button_WOC2";
-            this.button_WOC2.OnHoverBorderColor = System.Drawing.Color.Gray;
-            this.button_WOC2.OnHoverButtonColor = System.Drawing.Color.Red;
-            this.button_WOC2.OnHoverTextColor = System.Drawing.Color.Gray;
-            this.button_WOC2.Size = new System.Drawing.Size(35, 22);
-            this.button_WOC2.TabIndex = 13;
-            this.button_WOC2.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(222)))), ((int)(((byte)(246)))));
-            this.button_WOC2.UseVisualStyleBackColor = true;
-            this.button_WOC2.Click += new System.EventHandler(this.button_WOC2_Click_1);
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Tahoma", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(7, 13);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(404, 35);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Student Registration Form";
             // 
             // Form1
             // 
