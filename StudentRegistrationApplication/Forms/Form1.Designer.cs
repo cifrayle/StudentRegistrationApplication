@@ -114,7 +114,7 @@
             // lbx_LastName
             // 
             this.lbx_LastName.FormattingEnabled = true;
-            this.lbx_LastName.Location = new System.Drawing.Point(385, 224);
+            this.lbx_LastName.Location = new System.Drawing.Point(411, 224);
             this.lbx_LastName.Name = "lbx_LastName";
             this.lbx_LastName.Size = new System.Drawing.Size(106, 147);
             this.lbx_LastName.TabIndex = 6;
