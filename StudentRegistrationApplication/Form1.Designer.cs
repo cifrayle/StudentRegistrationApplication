@@ -46,6 +46,8 @@
             this.label7 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.rjRadioButton1 = new StudentRegistrationApplication.CustomControls.RJRadioButton();
+            this.rjRadioButton2 = new StudentRegistrationApplication.CustomControls.RJRadioButton();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -144,7 +146,9 @@
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.rjRadioButton2);
             this.panel3.Controls.Add(this.label5);
+            this.panel3.Controls.Add(this.rjRadioButton1);
             this.panel3.Location = new System.Drawing.Point(3, 191);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(388, 32);
@@ -249,6 +253,7 @@
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(271, 421);
             this.panel7.TabIndex = 2;
+            this.panel7.Paint += new System.Windows.Forms.PaintEventHandler(this.panel7_Paint);
             // 
             // label1
             // 
@@ -260,6 +265,39 @@
             this.label1.Size = new System.Drawing.Size(404, 35);
             this.label1.TabIndex = 0;
             this.label1.Text = "Student Registration Form";
+            // 
+            // rjRadioButton1
+            // 
+            this.rjRadioButton1.AutoSize = true;
+            this.rjRadioButton1.CheckedColor = System.Drawing.Color.CornflowerBlue;
+            this.rjRadioButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.rjRadioButton1.Location = new System.Drawing.Point(83, 8);
+            this.rjRadioButton1.MinimumSize = new System.Drawing.Size(0, 21);
+            this.rjRadioButton1.Name = "rjRadioButton1";
+            this.rjRadioButton1.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.rjRadioButton1.Size = new System.Drawing.Size(58, 21);
+            this.rjRadioButton1.TabIndex = 14;
+            this.rjRadioButton1.TabStop = true;
+            this.rjRadioButton1.Text = "Male";
+            this.rjRadioButton1.UnCheckedColor = System.Drawing.Color.Gray;
+            this.rjRadioButton1.UseVisualStyleBackColor = true;
+            this.rjRadioButton1.CheckedChanged += new System.EventHandler(this.rjRadioButton1_CheckedChanged);
+            // 
+            // rjRadioButton2
+            // 
+            this.rjRadioButton2.AutoSize = true;
+            this.rjRadioButton2.CheckedColor = System.Drawing.Color.Plum;
+            this.rjRadioButton2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.rjRadioButton2.Location = new System.Drawing.Point(147, 8);
+            this.rjRadioButton2.MinimumSize = new System.Drawing.Size(0, 21);
+            this.rjRadioButton2.Name = "rjRadioButton2";
+            this.rjRadioButton2.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.rjRadioButton2.Size = new System.Drawing.Size(69, 21);
+            this.rjRadioButton2.TabIndex = 15;
+            this.rjRadioButton2.TabStop = true;
+            this.rjRadioButton2.Text = "Female";
+            this.rjRadioButton2.UnCheckedColor = System.Drawing.Color.Gray;
+            this.rjRadioButton2.UseVisualStyleBackColor = true;
             // 
             // mainForm
             // 
@@ -317,6 +355,8 @@
         private CustomControls.RJCircularPictureBox roundedPictureBox1;
         private ePOSOne.btnProduct.Button_WOC button_WOC2;
         private ePOSOne.btnProduct.Button_WOC button_WOC1;
+        private CustomControls.RJRadioButton rjRadioButton1;
+        private CustomControls.RJRadioButton rjRadioButton2;
     }
 }
 

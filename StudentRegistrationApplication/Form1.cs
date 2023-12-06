@@ -153,6 +153,16 @@ namespace StudentRegistrationApplication
         {
             this.BringToFront();
         }
+
+        private void panel7_Paint(object sender, PaintEventArgs e)
+        {
+            this.SendToBack();
+        }
+
+        private void rjRadioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 
