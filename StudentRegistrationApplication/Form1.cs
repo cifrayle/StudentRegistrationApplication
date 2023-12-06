@@ -41,5 +41,30 @@ namespace StudentRegistrationApplication
         {
 
         }
+        private void roundedPictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button_WOC2_Click(object sender, EventArgs e)
+        {
+            String imageLocation = "";
+            try
+            {
+                OpenFileDialog dialog = new OpenFileDialog();
+                dialog.Filter = "jpg files(.*jpg)|*.jpg| PNG files(.*png)|*.png| All Files(*.*)|*.*";
+
+                if (dialog.ShowDialog() == System.Windows.Forms.DialogResult.OK) ;
+                imageLocation = dialog.FileName;
+
+                roundedPictureBox1.ImageLocation = imageLocation;
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("please enter *jpg or *png files only", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        
     }
 }

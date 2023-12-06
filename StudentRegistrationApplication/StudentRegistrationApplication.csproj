@@ -50,13 +50,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Button_WOC.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="CustomControls\Customdatepicker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomControls\RJCircularPictureBox.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="CustomControls\RJRadioButton.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="CustomControls\RJToggleButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomControls\RoundedPictureBox.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="CustomControls\RoundedTextBox.cs">
