@@ -54,7 +54,7 @@ namespace StudentRegistrationApplication
                 OpenFileDialog dialog = new OpenFileDialog();
                 dialog.Filter = "jpg files(.*jpg)|*.jpg| PNG files(.*png)|*.png| All Files(*.*)|*.*";
 
-                if (dialog.ShowDialog() == System.Windows.Forms.DialogResult.OK) ;
+                if (dialog.ShowDialog() == System.Windows.Forms.DialogResult.OK);
                 imageLocation = dialog.FileName;
 
                 roundedPictureBox1.ImageLocation = imageLocation;
