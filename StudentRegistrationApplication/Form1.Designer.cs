@@ -28,9 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mainForm));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button_WOC2 = new ePOSOne.btnProduct.Button_WOC();
             this.panel2 = new System.Windows.Forms.Panel();
             this.mName = new System.Windows.Forms.TextBox();
             this.fName = new System.Windows.Forms.TextBox();
@@ -39,56 +37,28 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.female = new StudentRegistrationApplication.CustomControls.RJRadioButton();
-            this.male = new StudentRegistrationApplication.CustomControls.RJRadioButton();
             this.label5 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.date = new StudentRegistrationApplication.CustomControls.Customdatepicker();
             this.label6 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.registerBut = new ePOSOne.btnProduct.Button_WOC();
             this.panel5 = new System.Windows.Forms.Panel();
             this.program = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.button_WOC1 = new ePOSOne.btnProduct.Button_WOC();
-            this.roundedPictureBox1 = new StudentRegistrationApplication.CustomControls.RJCircularPictureBox();
-            this.uploadIMG = new ePOSOne.btnProduct.Button_WOC();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
-            this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
-            this.panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.roundedPictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.button_WOC2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(668, 61);
             this.panel1.TabIndex = 0;
-            // 
-            // button_WOC2
-            // 
-            this.button_WOC2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(230)))), ((int)(((byte)(248)))));
-            this.button_WOC2.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.button_WOC2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_WOC2.Location = new System.Drawing.Point(633, 0);
-            this.button_WOC2.Name = "button_WOC2";
-            this.button_WOC2.OnHoverBorderColor = System.Drawing.Color.Gray;
-            this.button_WOC2.OnHoverButtonColor = System.Drawing.Color.Red;
-            this.button_WOC2.OnHoverTextColor = System.Drawing.Color.Gray;
-            this.button_WOC2.Size = new System.Drawing.Size(35, 22);
-            this.button_WOC2.TabIndex = 13;
-            this.button_WOC2.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(222)))), ((int)(((byte)(246)))));
-            this.button_WOC2.UseVisualStyleBackColor = true;
-            this.button_WOC2.Click += new System.EventHandler(this.button_WOC2_Click_1);
             // 
             // panel2
             // 
@@ -174,47 +144,11 @@
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.female);
-            this.panel3.Controls.Add(this.male);
             this.panel3.Controls.Add(this.label5);
             this.panel3.Location = new System.Drawing.Point(3, 191);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(388, 32);
             this.panel3.TabIndex = 1;
-            // 
-            // female
-            // 
-            this.female.AutoSize = true;
-            this.female.CheckedColor = System.Drawing.Color.Plum;
-            this.female.ForeColor = System.Drawing.Color.Black;
-            this.female.Location = new System.Drawing.Point(147, 8);
-            this.female.MinimumSize = new System.Drawing.Size(0, 21);
-            this.female.Name = "female";
-            this.female.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.female.Size = new System.Drawing.Size(69, 21);
-            this.female.TabIndex = 13;
-            this.female.TabStop = true;
-            this.female.Text = "Female";
-            this.female.UnCheckedColor = System.Drawing.Color.Gray;
-            this.female.UseVisualStyleBackColor = true;
-            this.female.CheckedChanged += new System.EventHandler(this.female_CheckedChanged);
-            // 
-            // male
-            // 
-            this.male.AutoSize = true;
-            this.male.CheckedColor = System.Drawing.Color.CornflowerBlue;
-            this.male.ForeColor = System.Drawing.Color.Black;
-            this.male.Location = new System.Drawing.Point(83, 8);
-            this.male.MinimumSize = new System.Drawing.Size(0, 21);
-            this.male.Name = "male";
-            this.male.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.male.Size = new System.Drawing.Size(58, 21);
-            this.male.TabIndex = 12;
-            this.male.TabStop = true;
-            this.male.Text = "Male";
-            this.male.UnCheckedColor = System.Drawing.Color.Gray;
-            this.male.UseVisualStyleBackColor = true;
-            this.male.CheckedChanged += new System.EventHandler(this.male_CheckedChanged);
             // 
             // label5
             // 
@@ -230,26 +164,11 @@
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.date);
             this.panel4.Controls.Add(this.label6);
             this.panel4.Location = new System.Drawing.Point(3, 229);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(388, 60);
             this.panel4.TabIndex = 2;
-            // 
-            // date
-            // 
-            this.date.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.date.BorderSize = 0;
-            this.date.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F);
-            this.date.Location = new System.Drawing.Point(123, 11);
-            this.date.MinimumSize = new System.Drawing.Size(4, 35);
-            this.date.Name = "date";
-            this.date.Size = new System.Drawing.Size(226, 35);
-            this.date.SkinColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(92)))), ((int)(((byte)(170)))));
-            this.date.TabIndex = 14;
-            this.date.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(222)))), ((int)(((byte)(246)))));
-            this.date.ValueChanged += new System.EventHandler(this.date_ValueChanged);
             // 
             // label6
             // 
@@ -264,28 +183,10 @@
             // 
             // panel6
             // 
-            this.panel6.Controls.Add(this.registerBut);
             this.panel6.Location = new System.Drawing.Point(3, 351);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(170, 50);
             this.panel6.TabIndex = 4;
-            // 
-            // registerBut
-            // 
-            this.registerBut.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(230)))), ((int)(((byte)(248)))));
-            this.registerBut.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(92)))), ((int)(((byte)(170)))));
-            this.registerBut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.registerBut.Location = new System.Drawing.Point(3, 0);
-            this.registerBut.Name = "registerBut";
-            this.registerBut.OnHoverBorderColor = System.Drawing.Color.Gray;
-            this.registerBut.OnHoverButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(92)))), ((int)(((byte)(170)))));
-            this.registerBut.OnHoverTextColor = System.Drawing.Color.Gray;
-            this.registerBut.Size = new System.Drawing.Size(160, 43);
-            this.registerBut.TabIndex = 0;
-            this.registerBut.Text = "Register student";
-            this.registerBut.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(222)))), ((int)(((byte)(246)))));
-            this.registerBut.UseVisualStyleBackColor = true;
-            this.registerBut.Click += new System.EventHandler(this.registerBut_Click);
             // 
             // panel5
             // 
@@ -343,66 +244,11 @@
             // 
             // panel7
             // 
-            this.panel7.Controls.Add(this.button_WOC1);
-            this.panel7.Controls.Add(this.roundedPictureBox1);
-            this.panel7.Controls.Add(this.uploadIMG);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel7.Location = new System.Drawing.Point(397, 61);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(271, 421);
             this.panel7.TabIndex = 2;
-            // 
-            // button_WOC1
-            // 
-            this.button_WOC1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(230)))), ((int)(((byte)(248)))));
-            this.button_WOC1.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(92)))), ((int)(((byte)(170)))));
-            this.button_WOC1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_WOC1.Location = new System.Drawing.Point(50, 351);
-            this.button_WOC1.Name = "button_WOC1";
-            this.button_WOC1.OnHoverBorderColor = System.Drawing.Color.Gray;
-            this.button_WOC1.OnHoverButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(92)))), ((int)(((byte)(170)))));
-            this.button_WOC1.OnHoverTextColor = System.Drawing.Color.Gray;
-            this.button_WOC1.Size = new System.Drawing.Size(160, 43);
-            this.button_WOC1.TabIndex = 1;
-            this.button_WOC1.Text = "Login as admin";
-            this.button_WOC1.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(222)))), ((int)(((byte)(246)))));
-            this.button_WOC1.UseVisualStyleBackColor = true;
-            this.button_WOC1.Click += new System.EventHandler(this.button_WOC1_Click);
-            // 
-            // roundedPictureBox1
-            // 
-            this.roundedPictureBox1.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
-            this.roundedPictureBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(222)))), ((int)(((byte)(246)))));
-            this.roundedPictureBox1.BorderColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(92)))), ((int)(((byte)(170)))));
-            this.roundedPictureBox1.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.DashDotDot;
-            this.roundedPictureBox1.BorderSize = 5;
-            this.roundedPictureBox1.GradientAngle = 50F;
-            this.roundedPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("roundedPictureBox1.Image")));
-            this.roundedPictureBox1.InitialImage = null;
-            this.roundedPictureBox1.Location = new System.Drawing.Point(13, 12);
-            this.roundedPictureBox1.Name = "roundedPictureBox1";
-            this.roundedPictureBox1.Size = new System.Drawing.Size(236, 236);
-            this.roundedPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.roundedPictureBox1.TabIndex = 2;
-            this.roundedPictureBox1.TabStop = false;
-            this.roundedPictureBox1.Click += new System.EventHandler(this.roundedPictureBox1_Click);
-            // 
-            // uploadIMG
-            // 
-            this.uploadIMG.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(230)))), ((int)(((byte)(248)))));
-            this.uploadIMG.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(92)))), ((int)(((byte)(170)))));
-            this.uploadIMG.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.uploadIMG.Location = new System.Drawing.Point(50, 256);
-            this.uploadIMG.Name = "uploadIMG";
-            this.uploadIMG.OnHoverBorderColor = System.Drawing.Color.Gray;
-            this.uploadIMG.OnHoverButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(92)))), ((int)(((byte)(170)))));
-            this.uploadIMG.OnHoverTextColor = System.Drawing.Color.Gray;
-            this.uploadIMG.Size = new System.Drawing.Size(160, 43);
-            this.uploadIMG.TabIndex = 1;
-            this.uploadIMG.Text = "Upload an image";
-            this.uploadIMG.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(222)))), ((int)(((byte)(246)))));
-            this.uploadIMG.UseVisualStyleBackColor = true;
-            this.uploadIMG.Click += new System.EventHandler(this.button_WOC2_Click);
             // 
             // label1
             // 
@@ -430,18 +276,14 @@
             this.Name = "mainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
-            this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            this.panel6.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
-            this.panel7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.roundedPictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
