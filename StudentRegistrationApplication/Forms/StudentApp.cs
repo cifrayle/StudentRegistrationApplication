@@ -70,5 +70,12 @@ namespace StudentRegistrationApplication.Forms
         {
 
         }
+
+        private void btn_adminLog_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            adminlog adminlog = new adminlog();
+            adminlog.Show();
+        }
     }
 }
