@@ -34,7 +34,6 @@ namespace StudentRegistrationApplication
             if (txtUserName.Text == "admin" && txtPassword.Text == "admin")
             {
                 this.Hide();
-                //MessageBox.Show("You have successfully logged in.", "System", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 adminDashboard admindash = new adminDashboard();
                 admindash.Show();
             }
@@ -51,7 +50,7 @@ namespace StudentRegistrationApplication
 
         private void button1_Click(object sender, EventArgs e)
         {
-            // exit the login form. go back to student registration form
+           // exit the application
            Application.Exit();
         }
 

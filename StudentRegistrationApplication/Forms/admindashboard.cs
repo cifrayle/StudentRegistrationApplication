@@ -21,7 +21,7 @@ namespace StudentRegistrationApplication
             this.Text = string.Empty;
             this.ControlBox = false;
         }
-        // functionalities of the forms
+        // method that have form functionalities
         public void loadForm(object Form) 
         {
             if (this.homePanel.Controls.Count > 0)
@@ -51,15 +51,15 @@ namespace StudentRegistrationApplication
 
         }
 
-        private void button4_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
 
         private void button3_Click(object sender, EventArgs e)
-        { 
+        {
             // some conditions to the response of user
-            var response = MessageBox.Show("Are you sure you want to log out? ", "System", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
+            panel_Side.Height = btn_Logout.Height;
+            panel_Side.Top = btn_Logout.Top;
+            // user responseD
+            var response = MessageBox.Show("Are you sure you want to log out? ", "System", MessageBoxButtons.YesNo, 
+                MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
 
             if (response == DialogResult.Yes)
             {
@@ -80,11 +80,12 @@ namespace StudentRegistrationApplication
 
         private void topPanel_MouseDown(object sender, MouseEventArgs e)
         {
-            // also for hovering around the form making it interactive
+            // also for dragging around the form making it responsive
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
 
+        // maximize button
         private void button2_Click(object sender, EventArgs e)
         {
             if (WindowState == FormWindowState.Normal)
@@ -96,7 +97,13 @@ namespace StudentRegistrationApplication
                 this.WindowState = FormWindowState.Normal;
             }
         }
+        // exit button
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
 
+        // minimize button
         private void button1_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
@@ -104,12 +111,13 @@ namespace StudentRegistrationApplication
 
         private void btn_homePage_Click(object sender, EventArgs e)
         {
+            // responsive side panel
             panel_Side.Height = btn_homePage.Height;
             panel_Side.Top = btn_homePage.Top;
+            // load a form
             loadForm(new homePageForm());
             
         }
-
         private void btn_Registered_Click(object sender, EventArgs e)
         {
             panel_Side.Height = btn_Registered.Height;
@@ -125,6 +133,11 @@ namespace StudentRegistrationApplication
         }
 
         private void homePanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void topPanel_Paint(object sender, PaintEventArgs e)
         {
 
         }
