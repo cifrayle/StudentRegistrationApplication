@@ -11,30 +11,41 @@ using System.Windows.Forms;
 
 namespace StudentRegistrationApplication
 {
+    // adminDashboard class represents the main form of the application for administrators
     public partial class adminDashboard : Form
     {
-        public adminDashboard()
+        // Instance of registeredForm to manage registered student information
+        private registeredForm regForm;
+
+        // Constructor for adminDashboard, receives an instance of registeredForm
+        public adminDashboard(registeredForm regForm)
         {
             InitializeComponent();
+            // Set the received instance of registeredForm
+            this.regForm = regForm;
+
+            // Initialize UI elements, such as side panel and window properties
             panel_Side.Height = btn_homePage.Height;
             panel_Side.Top = btn_homePage.Top;
             this.Text = string.Empty;
             this.ControlBox = false;
         }
-        // method that have form functionalities
-        public void loadForm(object Form) 
+
+        // Method that manages dynamic loading of forms into the homePanel
+        public void loadForm(object Form)
         {
-            if (this.homePanel.Controls.Count > 0)
-                this.homePanel.Controls.RemoveAt(0);
+            if (this.mainPanel.Controls.Count > 0)
+                this.mainPanel.Controls.RemoveAt(0);
             Form form = Form as Form;
             form.TopLevel = false;
             form.Dock = DockStyle.Fill;
-            this.homePanel.Controls.Add(form);
-            this.homePanel.Tag = form;
+            this.mainPanel.Controls.Add(form);
+            this.mainPanel.Tag = form;
             form.BringToFront();
             form.Show();
         }
-        // For hovering the form around
+
+        // Import user32 DLL functions for dragging the form
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
 
@@ -43,103 +54,125 @@ namespace StudentRegistrationApplication
 
         private void admindashboard_Load(object sender, EventArgs e)
         {
-
+            // Additional initialization code can be added here if needed
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
-
+            // Additional paint-related code can be added here if needed
         }
 
-
+        // Event handler for the button3 (Logout) click event
         private void button3_Click(object sender, EventArgs e)
         {
-            // some conditions to the response of user
+            // Change side panel appearance
             panel_Side.Height = btn_Logout.Height;
             panel_Side.Top = btn_Logout.Top;
-            // user responseD
-            var response = MessageBox.Show("Are you sure you want to log out? ", "System", MessageBoxButtons.YesNo, 
+
+            // Prompt user with a confirmation dialog
+            var response = MessageBox.Show("Are you sure you want to log out? ", "System", MessageBoxButtons.YesNo,
                 MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
 
+            // Handle user response
             if (response == DialogResult.Yes)
             {
+                // Hide the current form
                 this.Hide();
-                adminlog admin = new adminlog();
+                // Create a new adminlog form with the provided instance of registeredForm
+                adminlog admin = new adminlog(regForm);
                 admin.Show();
             }
-            else if (response == DialogResult.No) 
-            {   
+            else if (response == DialogResult.No)
+            {
+                // Show the current form
                 this.Show();
             }
         }
 
         private void mainPanel_MouseDown(object sender, MouseEventArgs e)
         {
- 
         }
 
+        // Event handler for the topPanel mouse down event
         private void topPanel_MouseDown(object sender, MouseEventArgs e)
         {
-            // also for dragging around the form making it responsive
+            // Allow dragging the form by capturing mouse movements
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
 
-        // maximize button
+        // Event handler for the maximize button click event
         private void button2_Click(object sender, EventArgs e)
         {
+            // Toggle between normal and maximized window state
             if (WindowState == FormWindowState.Normal)
             {
                 this.WindowState = FormWindowState.Maximized;
             }
-            else 
-            { 
+            else
+            {
                 this.WindowState = FormWindowState.Normal;
             }
         }
-        // exit button
+
+        // Event handler for the exit button click event
         private void button4_Click(object sender, EventArgs e)
         {
+            // Exit the application
             Application.Exit();
         }
 
-        // minimize button
+        // Event handler for the minimize button click event
         private void button1_Click(object sender, EventArgs e)
         {
+            // Minimize the form
             this.WindowState = FormWindowState.Minimized;
         }
 
+        // Event handler for the btn_homePage click event
         private void btn_homePage_Click(object sender, EventArgs e)
         {
-            // responsive side panel
+            // Change side panel appearance
             panel_Side.Height = btn_homePage.Height;
             panel_Side.Top = btn_homePage.Top;
-            // load a form
+
+            // Load the homePageForm into the homePanel
             loadForm(new homePageForm());
-            
         }
+
+        // Event handler for the btn_Registered click event
         private void btn_Registered_Click(object sender, EventArgs e)
         {
+            // Change side panel appearance
             panel_Side.Height = btn_Registered.Height;
             panel_Side.Top = btn_Registered.Top;
-            loadForm(new registeredForm());
+
+            // Manually set up registeredForm for display in the homePanel
+            regForm.TopLevel = false;
+            regForm.Dock = DockStyle.Fill;
+            this.mainPanel.Controls.Add(regForm);
+            this.mainPanel.Tag = regForm;
+            regForm.BringToFront();
+            regForm.Show();
         }
 
+        // Event handler for the btn_Enrolled click event
         private void btn_Enrolled_Click(object sender, EventArgs e)
         {
+            // Change side panel appearance
             panel_Side.Height = btn_Enrolled.Height;
             panel_Side.Top = btn_Enrolled.Top;
+
+            // Load the enrolledForm into the homePanel
             loadForm(new enrolledForm());
         }
-
         private void homePanel_Paint(object sender, PaintEventArgs e)
         {
-
         }
 
         private void topPanel_Paint(object sender, PaintEventArgs e)
         {
-
+            // Additional paint-related code can be added here if needed
         }
     }
 }

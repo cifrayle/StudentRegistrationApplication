@@ -14,9 +14,9 @@ namespace StudentRegistrationApplication.Forms
 {
     public partial class StudentApp : Form
     {
-        public static string firstName = "";
-        public static string lastName = "";
-        public static string programApplied = "";
+        // Create a single instance of registeredForm
+        private registeredForm regForm = new registeredForm();
+
         public StudentApp()
         {
             InitializeComponent();
@@ -47,17 +47,20 @@ namespace StudentRegistrationApplication.Forms
 
         private void buttonRegister_Click(object sender, EventArgs e)
         {
-            firstName = textBoxFirstName.Text;
-            lastName = textBoxLastName.Text;
-            programApplied = textBoxProgram.Text;
-            registeredForm regForm = new registeredForm();
-            regForm.Focus();
+            // Get entered personal information from textboxes
+            string firstName = textBoxFirstName.Text;
+            string lastName = textBoxLastName.Text;
+            string programApplied = textBoxProgram.Text;
+            string middleName = textBoxMiddleName.Text;
+
+            // Pass the entered information to the shared instance of registeredForm
+            regForm.AddPersonalInformation(lastName, firstName, programApplied, middleName);
         }
 
         private void buttonLoginAdmin_Click(object sender, EventArgs e)
         {
             this.Hide();
-            adminlog adminlog = new adminlog();
+            adminlog adminlog = new adminlog(regForm); // Pass the instance of registeredForm
             adminlog.Show();
         }
 
@@ -74,7 +77,7 @@ namespace StudentRegistrationApplication.Forms
         private void btn_adminLog_Click(object sender, EventArgs e)
         {
             this.Hide();
-            adminlog adminlog = new adminlog();
+            adminlog adminlog = new adminlog(regForm);
             adminlog.Show();
         }
     }

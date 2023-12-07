@@ -8,14 +8,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using StudentRegistrationApplication.Forms;
 
 namespace StudentRegistrationApplication
 {
     public partial class adminlog : Form
     {
-        public adminlog()
+        private registeredForm regForm;
+        public adminlog(registeredForm regForm)
         {
             InitializeComponent();
+            this.regForm = regForm;
         }
         // For hovering around the form
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
@@ -34,7 +37,7 @@ namespace StudentRegistrationApplication
             if (txtUserName.Text == "admin" && txtPassword.Text == "admin")
             {
                 this.Hide();
-                adminDashboard admindash = new adminDashboard();
+                adminDashboard admindash = new adminDashboard(regForm);
                 admindash.Show();
             }
             // this line won't display anything if the user entered an empty text.
@@ -50,8 +53,9 @@ namespace StudentRegistrationApplication
 
         private void button1_Click(object sender, EventArgs e)
         {
-           // exit the application
-           Application.Exit();
+            this.Hide();
+            StudentApp stApp = new StudentApp();
+            stApp.Show();
         }
 
         private void adminlog_Load(object sender, EventArgs e)
