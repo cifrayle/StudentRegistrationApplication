@@ -38,7 +38,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Bookman Old Style", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(37, 343);
+            this.label1.Location = new System.Drawing.Point(127, 379);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(654, 44);
             this.label1.TabIndex = 2;
@@ -48,9 +48,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::StudentRegistrationApplication.Properties.Resources.sti_logo_removebg_preview;
-            this.pictureBox1.Location = new System.Drawing.Point(178, 66);
+            this.pictureBox1.Location = new System.Drawing.Point(237, 67);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(352, 274);
+            this.pictureBox1.Size = new System.Drawing.Size(431, 309);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
@@ -59,7 +59,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Bookman Old Style", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(233, 387);
+            this.label2.Location = new System.Drawing.Point(323, 423);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(262, 28);
             this.label2.TabIndex = 4;
@@ -70,7 +70,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(230)))), ((int)(((byte)(248)))));
-            this.ClientSize = new System.Drawing.Size(724, 512);
+            this.ClientSize = new System.Drawing.Size(918, 530);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);

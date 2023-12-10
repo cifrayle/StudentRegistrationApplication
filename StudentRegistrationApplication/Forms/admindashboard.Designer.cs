@@ -64,17 +64,17 @@
             this.sidePanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.sidePanel.Location = new System.Drawing.Point(0, 30);
             this.sidePanel.Name = "sidePanel";
-            this.sidePanel.Size = new System.Drawing.Size(244, 530);
+            this.sidePanel.Size = new System.Drawing.Size(244, 562);
             this.sidePanel.TabIndex = 0;
             this.sidePanel.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // panel_Side
             // 
             this.panel_Side.BackColor = System.Drawing.Color.White;
-            this.panel_Side.ForeColor = System.Drawing.Color.White;
-            this.panel_Side.Location = new System.Drawing.Point(1, 223);
+            this.panel_Side.ForeColor = System.Drawing.Color.FloralWhite;
+            this.panel_Side.Location = new System.Drawing.Point(3, 225);
             this.panel_Side.Name = "panel_Side";
-            this.panel_Side.Size = new System.Drawing.Size(10, 43);
+            this.panel_Side.Size = new System.Drawing.Size(10, 38);
             this.panel_Side.TabIndex = 8;
             // 
             // admin
@@ -246,7 +246,7 @@
             this.mainPanel.Location = new System.Drawing.Point(244, 30);
             this.mainPanel.MinimumSize = new System.Drawing.Size(524, 318);
             this.mainPanel.Name = "mainPanel";
-            this.mainPanel.Size = new System.Drawing.Size(918, 530);
+            this.mainPanel.Size = new System.Drawing.Size(918, 562);
             this.mainPanel.TabIndex = 2;
             this.mainPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.homePanel_Paint);
             this.mainPanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.mainPanel_MouseDown);
@@ -255,7 +255,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Bookman Old Style", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(233, 387);
+            this.label2.Location = new System.Drawing.Point(323, 423);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(262, 28);
             this.label2.TabIndex = 7;
@@ -264,9 +264,9 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::StudentRegistrationApplication.Properties.Resources.sti_logo_removebg_preview;
-            this.pictureBox2.Location = new System.Drawing.Point(178, 66);
+            this.pictureBox2.Location = new System.Drawing.Point(237, 67);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(352, 274);
+            this.pictureBox2.Size = new System.Drawing.Size(431, 309);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 6;
             this.pictureBox2.TabStop = false;
@@ -275,7 +275,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Bookman Old Style", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(37, 343);
+            this.label1.Location = new System.Drawing.Point(127, 379);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(654, 44);
             this.label1.TabIndex = 5;
@@ -286,7 +286,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(230)))), ((int)(((byte)(248)))));
-            this.ClientSize = new System.Drawing.Size(1162, 560);
+            this.ClientSize = new System.Drawing.Size(1162, 592);
             this.Controls.Add(this.mainPanel);
             this.Controls.Add(this.sidePanel);
             this.Controls.Add(this.topPanel);

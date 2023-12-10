@@ -53,8 +53,24 @@ namespace StudentRegistrationApplication.Forms
             string programApplied = textBoxProgram.Text;
             string middleName = textBoxMiddleName.Text;
 
-            // Pass the entered information to the shared instance of registeredForm
-            regForm.AddPersonalInformation(lastName, firstName, programApplied, middleName);
+            // Check if any of the textboxes is empty
+            if (string.IsNullOrEmpty(firstName) || string.IsNullOrEmpty(lastName) || string.IsNullOrEmpty(programApplied) || string.IsNullOrEmpty(middleName))
+            {
+                // Display a message or handle the empty data situation as needed
+                MessageBox.Show("Please enter all required information.", "System", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button3);
+            }
+            else
+            {
+                // Pass the entered information to the shared instance of registeredForm
+                regForm.AddPersonalInformation(lastName, firstName, programApplied, middleName);
+                MessageBox.Show("Registration success!", "System", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button3);
+
+                // Clear the text in the textboxes
+                textBoxFirstName.Text = "";
+                textBoxLastName.Text = "";
+                textBoxProgram.Text = "";
+                textBoxMiddleName.Text = "";
+            }
         }
 
         private void buttonLoginAdmin_Click(object sender, EventArgs e)
@@ -79,6 +95,27 @@ namespace StudentRegistrationApplication.Forms
             this.Hide();
             adminlog adminlog = new adminlog(regForm);
             adminlog.Show();
+        }
+
+        private void btn_ImageUp_Click(object sender, EventArgs e)
+        {
+            String imageLoc = "";
+            try
+            {
+                OpenFileDialog dialog = new OpenFileDialog();
+                dialog.Filter = "jpg files(.*jpg)|*.jpg| PNG files(.*png)|*.png| All Files(*.*)|*.*";
+
+                if (dialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                {
+                    imageLoc = dialog.FileName;
+
+                    Image1.ImageLocation = imageLoc;
+                } 
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("An error occured. Please try again.", "System", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

@@ -39,15 +39,16 @@
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.label6 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dtp_DateOfBirth = new System.Windows.Forms.DateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
             this.textBoxProgram = new System.Windows.Forms.TextBox();
             this.buttonRegister = new System.Windows.Forms.Button();
             this.panelTop = new System.Windows.Forms.Panel();
             this.btn_adminLog = new System.Windows.Forms.Button();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
+            this.Image1 = new System.Windows.Forms.PictureBox();
+            this.btn_ImageUp = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.Image1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -166,15 +167,16 @@
             this.label6.TabIndex = 15;
             this.label6.Text = "Date of birth";
             // 
-            // dateTimePicker1
+            // dtp_DateOfBirth
             // 
-            this.dateTimePicker1.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(230)))), ((int)(((byte)(248)))));
-            this.dateTimePicker1.CalendarTitleBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(137)))), ((int)(((byte)(243)))));
-            this.dateTimePicker1.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(19, 324);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(362, 23);
-            this.dateTimePicker1.TabIndex = 16;
+            this.dtp_DateOfBirth.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(230)))), ((int)(((byte)(248)))));
+            this.dtp_DateOfBirth.CalendarTitleBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(137)))), ((int)(((byte)(243)))));
+            this.dtp_DateOfBirth.CalendarTitleForeColor = System.Drawing.SystemColors.HotTrack;
+            this.dtp_DateOfBirth.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtp_DateOfBirth.Location = new System.Drawing.Point(19, 324);
+            this.dtp_DateOfBirth.Name = "dtp_DateOfBirth";
+            this.dtp_DateOfBirth.Size = new System.Drawing.Size(362, 23);
+            this.dtp_DateOfBirth.TabIndex = 16;
             // 
             // label7
             // 
@@ -226,44 +228,47 @@
             this.btn_adminLog.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btn_adminLog.FlatAppearance.BorderSize = 0;
             this.btn_adminLog.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_adminLog.Location = new System.Drawing.Point(674, 382);
+            this.btn_adminLog.Location = new System.Drawing.Point(333, 421);
             this.btn_adminLog.Name = "btn_adminLog";
-            this.btn_adminLog.Size = new System.Drawing.Size(42, 42);
+            this.btn_adminLog.Size = new System.Drawing.Size(48, 34);
             this.btn_adminLog.TabIndex = 23;
             this.btn_adminLog.UseVisualStyleBackColor = true;
             this.btn_adminLog.Click += new System.EventHandler(this.btn_adminLog_Click);
             // 
-            // label8
+            // Image1
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(488, 382);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(180, 48);
-            this.label8.TabIndex = 24;
-            this.label8.Text = "button for logging \r\nin as admin -->\r\n";
+            this.Image1.Location = new System.Drawing.Point(442, 97);
+            this.Image1.Name = "Image1";
+            this.Image1.Size = new System.Drawing.Size(284, 250);
+            this.Image1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Image1.TabIndex = 24;
+            this.Image1.TabStop = false;
             // 
-            // label9
+            // btn_ImageUp
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(454, 238);
-            this.label9.Name = "label9";
-            this.label9.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label9.Size = new System.Drawing.Size(225, 24);
-            this.label9.TabIndex = 25;
-            this.label9.Text = "Design ni nickos here..";
+            this.btn_ImageUp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(92)))), ((int)(((byte)(170)))));
+            this.btn_ImageUp.FlatAppearance.BorderSize = 0;
+            this.btn_ImageUp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_ImageUp.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ImageUp.ForeColor = System.Drawing.Color.White;
+            this.btn_ImageUp.Location = new System.Drawing.Point(508, 371);
+            this.btn_ImageUp.Name = "btn_ImageUp";
+            this.btn_ImageUp.Size = new System.Drawing.Size(160, 34);
+            this.btn_ImageUp.TabIndex = 25;
+            this.btn_ImageUp.Text = "Upload image";
+            this.btn_ImageUp.UseVisualStyleBackColor = false;
+            this.btn_ImageUp.Click += new System.EventHandler(this.btn_ImageUp_Click);
             // 
-            // label10
+            // button1
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(430, 137);
-            this.label10.Name = "label10";
-            this.label10.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label10.Size = new System.Drawing.Size(286, 24);
-            this.label10.TabIndex = 26;
-            this.label10.Text = "This form is partial layout only";
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(230)))), ((int)(((byte)(248)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(92)))), ((int)(((byte)(170)))));
+            this.button1.Location = new System.Drawing.Point(437, 92);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(294, 259);
+            this.button1.TabIndex = 26;
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // StudentApp
             // 
@@ -271,14 +276,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(230)))), ((int)(((byte)(248)))));
             this.ClientSize = new System.Drawing.Size(756, 474);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
+            this.Controls.Add(this.btn_ImageUp);
+            this.Controls.Add(this.Image1);
             this.Controls.Add(this.btn_adminLog);
             this.Controls.Add(this.buttonRegister);
             this.Controls.Add(this.textBoxProgram);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.dtp_DateOfBirth);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.radioButton1);
@@ -291,11 +295,13 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panelTop);
+            this.Controls.Add(this.button1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "StudentApp";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "StudentApp";
             this.Load += new System.EventHandler(this.StudentApp_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.Image1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -314,14 +320,14 @@
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtp_DateOfBirth;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox textBoxProgram;
         private System.Windows.Forms.Button buttonRegister;
         private System.Windows.Forms.Panel panelTop;
         private System.Windows.Forms.Button btn_adminLog;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.PictureBox Image1;
+        private System.Windows.Forms.Button btn_ImageUp;
+        private System.Windows.Forms.Button button1;
     }
 }
