@@ -206,7 +206,7 @@
             this.buttonRegister.ForeColor = System.Drawing.Color.White;
             this.buttonRegister.Location = new System.Drawing.Point(19, 421);
             this.buttonRegister.Name = "buttonRegister";
-            this.buttonRegister.Size = new System.Drawing.Size(160, 34);
+            this.buttonRegister.Size = new System.Drawing.Size(362, 34);
             this.buttonRegister.TabIndex = 20;
             this.buttonRegister.Text = "Register";
             this.buttonRegister.UseVisualStyleBackColor = false;
@@ -228,18 +228,21 @@
             this.btn_adminLog.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btn_adminLog.FlatAppearance.BorderSize = 0;
             this.btn_adminLog.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_adminLog.Location = new System.Drawing.Point(333, 421);
+            this.btn_adminLog.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_adminLog.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_adminLog.Location = new System.Drawing.Point(554, 421);
             this.btn_adminLog.Name = "btn_adminLog";
-            this.btn_adminLog.Size = new System.Drawing.Size(48, 34);
+            this.btn_adminLog.Size = new System.Drawing.Size(62, 34);
             this.btn_adminLog.TabIndex = 23;
+            this.btn_adminLog.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_adminLog.UseVisualStyleBackColor = true;
             this.btn_adminLog.Click += new System.EventHandler(this.btn_adminLog_Click);
             // 
             // Image1
             // 
-            this.Image1.Location = new System.Drawing.Point(442, 97);
+            this.Image1.Location = new System.Drawing.Point(439, 94);
             this.Image1.Name = "Image1";
-            this.Image1.Size = new System.Drawing.Size(284, 250);
+            this.Image1.Size = new System.Drawing.Size(290, 255);
             this.Image1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Image1.TabIndex = 24;
             this.Image1.TabStop = false;
@@ -251,9 +254,9 @@
             this.btn_ImageUp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_ImageUp.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_ImageUp.ForeColor = System.Drawing.Color.White;
-            this.btn_ImageUp.Location = new System.Drawing.Point(508, 371);
+            this.btn_ImageUp.Location = new System.Drawing.Point(437, 371);
             this.btn_ImageUp.Name = "btn_ImageUp";
-            this.btn_ImageUp.Size = new System.Drawing.Size(160, 34);
+            this.btn_ImageUp.Size = new System.Drawing.Size(294, 34);
             this.btn_ImageUp.TabIndex = 25;
             this.btn_ImageUp.Text = "Upload image";
             this.btn_ImageUp.UseVisualStyleBackColor = false;

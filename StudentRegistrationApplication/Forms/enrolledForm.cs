@@ -12,18 +12,18 @@ namespace StudentRegistrationApplication
 {
     public partial class enrolledForm : Form
     {
-        // Static lists to store enrolled data
+        private registeredForm registeredForm;
+
+        private List<string> enrlastNames = new List<string>();
+        private List<string> enrfirstNames = new List<string>();
+        private List<string> enrprogramsApplied = new List<string>();
+        private List<string> enrmiddleNames = new List<string>();
 
         public enrolledForm()
         {
             InitializeComponent();
         }
 
-        // Add enrollment data to the static lists
-        public static void AddEnrollment(string firstName, string lastName)
-        {
-
-        }
         private void enrolledForm_Load(object sender, EventArgs e)
         {
 

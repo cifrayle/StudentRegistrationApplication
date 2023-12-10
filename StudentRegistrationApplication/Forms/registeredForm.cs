@@ -79,28 +79,56 @@ namespace StudentRegistrationApplication
 
         }
 
-
+        // this is remove button
         private void btn_Login_Click(object sender, EventArgs e)
         {
-            // Check if an item is selected in lbx_ProgramApplied
+            // Check if an item is selected in lbx_regProgramApplied
             if (lbx_regProgramApplied.SelectedItem != null)
             {
                 // Get the selected index
                 int selectedIndex = lbx_regProgramApplied.SelectedIndex;
 
-                // Remove the selected item from lbx_ProgramApplied
-                lbx_regProgramApplied.Items.RemoveAt(selectedIndex);
+                // Capture the information of the removed student
+                string removedLastName = lastNames[selectedIndex];
+                string removedFirstName = firstNames[selectedIndex];
+                string removedProgramApplied = programsApplied[selectedIndex];
+                string removedMiddleName = middleNames[selectedIndex];
 
-                // Remove the corresponding items from lbx_regFirstName and lbx_regLastName
-                lbx_regFirstName.Items.RemoveAt(selectedIndex);
-                lbx_regLastName.Items.RemoveAt(selectedIndex);
-                lbx_regMiddleName.Items.RemoveAt(selectedIndex);
+                // Ask for confirmation
+                DialogResult result = MessageBox.Show($"Are you sure you want to remove the student?\n\n" +
+                                                      $"Last Name: {removedLastName}\n" +
+                                                      $"First Name: {removedFirstName}\n" +
+                                                      $"Middle Name: {removedMiddleName}\n" +
+                                                      $"Program Applied: {removedProgramApplied}", "System", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                if (result == DialogResult.Yes)
+                {
+                    // Remove the selected item from lists
+                    lastNames.RemoveAt(selectedIndex);
+                    firstNames.RemoveAt(selectedIndex);
+                    programsApplied.RemoveAt(selectedIndex);
+                    middleNames.RemoveAt(selectedIndex);
+
+                    // Remove the corresponding items from ListBox
+                    lbx_regLastName.Items.RemoveAt(selectedIndex);
+                    lbx_regFirstName.Items.RemoveAt(selectedIndex);
+                    lbx_regProgramApplied.Items.RemoveAt(selectedIndex);
+                    lbx_regMiddleName.Items.RemoveAt(selectedIndex);
+
+                    // Show a message box indicating the student has been removed
+                    MessageBox.Show($"Student Removed:\n\n" +
+                                    $"Last Name: {removedLastName}\n" +
+                                    $"First Name: {removedFirstName}\n" +
+                                    $"Middle Name: {removedMiddleName}\n" +
+                                    $"Program Applied: {removedProgramApplied}", "System", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                // If the admin clicks 'No' in the confirmation dialog, do nothing
             }
         }
 
         private void button1_Click(object sender, EventArgs e)
-        {  
-            //enroll button
+        {
+           
         }
 
         private void registeredForm_Load(object sender, EventArgs e)
