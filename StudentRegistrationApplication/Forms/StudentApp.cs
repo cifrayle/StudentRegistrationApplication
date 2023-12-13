@@ -74,6 +74,7 @@ namespace StudentRegistrationApplication.Forms
                 textBoxLastName.Text = "";
                 comboBoxProgram.Text = "";
                 textBoxMiddleName.Text = "";
+                circularPicBox1.Image = null;
 
             }
         }
