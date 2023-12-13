@@ -36,7 +36,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.btn_Login = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.lbx_regMiddleName = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
@@ -124,28 +123,13 @@
             this.btn_Login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Login.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Login.ForeColor = System.Drawing.Color.White;
-            this.btn_Login.Location = new System.Drawing.Point(211, 483);
+            this.btn_Login.Location = new System.Drawing.Point(256, 483);
             this.btn_Login.Name = "btn_Login";
-            this.btn_Login.Size = new System.Drawing.Size(241, 34);
+            this.btn_Login.Size = new System.Drawing.Size(402, 34);
             this.btn_Login.TabIndex = 9;
             this.btn_Login.Text = "Remove student";
             this.btn_Login.UseVisualStyleBackColor = false;
             this.btn_Login.Click += new System.EventHandler(this.btn_Login_Click);
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(92)))), ((int)(((byte)(170)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(462, 483);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(241, 34);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "Enroll student";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label5
             // 
@@ -175,7 +159,6 @@
             this.ClientSize = new System.Drawing.Size(918, 562);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.lbx_regMiddleName);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.btn_Login);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -203,7 +186,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btn_Login;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ListBox lbx_regMiddleName;
     }

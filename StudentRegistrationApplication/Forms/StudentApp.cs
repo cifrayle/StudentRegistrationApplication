@@ -50,13 +50,17 @@ namespace StudentRegistrationApplication.Forms
             // Get entered personal information from textboxes
             string firstName = textBoxFirstName.Text;
             string lastName = textBoxLastName.Text;
-            string programApplied = textBoxProgram.Text;
             string middleName = textBoxMiddleName.Text;
+            string programApplied = comboBoxProgram.Text;
+
 
             // Check if any of the textboxes is empty
             if (string.IsNullOrEmpty(firstName) || string.IsNullOrEmpty(lastName) || string.IsNullOrEmpty(programApplied) || string.IsNullOrEmpty(middleName))
             {
                 // Display a message or handle the empty data situation as needed
+                MessageBox.Show("Please enter all required information.", "System", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button3);
+            } else if (dtp_DateOfBirth.Value == DateTimePicker.MinimumDateTime || !rbtn_Male.Checked && !rbtn_Female.Checked) 
+            {
                 MessageBox.Show("Please enter all required information.", "System", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button3);
             }
             else
@@ -68,8 +72,9 @@ namespace StudentRegistrationApplication.Forms
                 // Clear the text in the textboxes
                 textBoxFirstName.Text = "";
                 textBoxLastName.Text = "";
-                textBoxProgram.Text = "";
+                comboBoxProgram.Text = "";
                 textBoxMiddleName.Text = "";
+
             }
         }
 
@@ -92,11 +97,14 @@ namespace StudentRegistrationApplication.Forms
 
         private void btn_adminLog_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            adminlog adminlog = new adminlog(regForm);
-            adminlog.Show();
+            DialogResult result = MessageBox.Show("Do you want to log in as admin? ", "System", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes) {
+                this.Hide();
+                adminlog adminlog = new adminlog(regForm);
+                adminlog.Show();
+            }
         }
-
+        // image upload
         private void btn_ImageUp_Click(object sender, EventArgs e)
         {
             String imageLoc = "";
@@ -109,12 +117,28 @@ namespace StudentRegistrationApplication.Forms
                 {
                     imageLoc = dialog.FileName;
 
-                    Image1.ImageLocation = imageLoc;
+                    circularPicBox1.ImageLocation = imageLoc;
                 } 
             }
             catch (Exception)
             {
                 MessageBox.Show("An error occured. Please try again.", "System", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Do you want to log in as admin? ", "System", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                this.Hide();
+                adminlog adminlog = new adminlog(regForm);
+                adminlog.Show();
             }
         }
     }

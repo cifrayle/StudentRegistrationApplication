@@ -70,7 +70,7 @@ namespace StudentRegistrationApplication
             panel_Side.Top = btn_Logout.Top;
 
             // Prompt user with a confirmation dialog
-            var response = MessageBox.Show("Are you sure you want to log out? ", "System", MessageBoxButtons.YesNo,
+            DialogResult response = MessageBox.Show("Are you sure you want to log out? ", "System", MessageBoxButtons.YesNo,
                 MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
 
             // Handle user response
@@ -101,10 +101,10 @@ namespace StudentRegistrationApplication
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
 
-        // Event handler for the maximize button click event
+        // maximize
         private void button2_Click(object sender, EventArgs e)
         {
-            // Toggle between normal and maximized window state
+            
             if (WindowState == FormWindowState.Normal)
             {
                 this.WindowState = FormWindowState.Maximized;
@@ -115,21 +115,21 @@ namespace StudentRegistrationApplication
             }
         }
 
-        // Event handler for the exit button click event
+        // exit
         private void button4_Click(object sender, EventArgs e)
         {
-            // Exit the application
+            
             Application.Exit();
         }
 
-        // Event handler for the minimize button click event
+        // mininmize
         private void button1_Click(object sender, EventArgs e)
         {
-            // Minimize the form
+            
             this.WindowState = FormWindowState.Minimized;
         }
 
-        // Event handler for the btn_homePage click event
+        // home page form 
         private void btn_homePage_Click(object sender, EventArgs e)
         {
             // Change side panel appearance
@@ -140,7 +140,7 @@ namespace StudentRegistrationApplication
             loadForm(new homePageForm());
         }
 
-        // Event handler for the btn_Registered click event
+        // registered students dashboard
         private void btn_Registered_Click(object sender, EventArgs e)
         {
             // Change side panel appearance
@@ -155,17 +155,7 @@ namespace StudentRegistrationApplication
             regForm.BringToFront();
             regForm.Show();
         }
-
-        // Event handler for the btn_Enrolled click event
-        private void btn_Enrolled_Click(object sender, EventArgs e)
-        {
-            // Change side panel appearance
-            panel_Side.Height = btn_Enrolled.Height;
-            panel_Side.Top = btn_Enrolled.Top;
-
-            // Load the enrolledForm into the homePanel
-            loadForm(new enrolledForm());
-        }
+ 
         private void homePanel_Paint(object sender, PaintEventArgs e)
         {
         }

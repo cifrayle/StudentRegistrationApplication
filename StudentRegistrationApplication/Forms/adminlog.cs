@@ -37,8 +37,11 @@ namespace StudentRegistrationApplication
             if (txtUserName.Text == "admin" && txtPassword.Text == "admin")
             {
                 this.Hide();
-                adminDashboard admindash = new adminDashboard(regForm);
-                admindash.Show();
+                LoadingFormAnimation loadform = new LoadingFormAnimation(regForm);
+                loadform.Show();
+                
+                //adminDashboard admindash = new adminDashboard(regForm);
+                //admindash.Show();
             }
             // this line won't display anything if the user entered an empty text.
             else if (txtUserName.Text == "" && txtPassword.Text == "")

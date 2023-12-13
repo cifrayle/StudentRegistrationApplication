@@ -36,19 +36,21 @@
             this.label3 = new System.Windows.Forms.Label();
             this.textBoxMiddleName = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.rbtn_Male = new System.Windows.Forms.RadioButton();
+            this.rbtn_Female = new System.Windows.Forms.RadioButton();
             this.label6 = new System.Windows.Forms.Label();
             this.dtp_DateOfBirth = new System.Windows.Forms.DateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBoxProgram = new System.Windows.Forms.TextBox();
             this.buttonRegister = new System.Windows.Forms.Button();
             this.panelTop = new System.Windows.Forms.Panel();
-            this.btn_adminLog = new System.Windows.Forms.Button();
-            this.Image1 = new System.Windows.Forms.PictureBox();
             this.btn_ImageUp = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.Image1)).BeginInit();
+            this.comboBoxProgram = new System.Windows.Forms.ComboBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.buttonLogin = new System.Windows.Forms.Button();
+            this.circularPicBox1 = new StudentRegistrationApplication.Forms.CircularPicBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.panelTop.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.circularPicBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -67,7 +69,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Bookman Old Style", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(137)))), ((int)(((byte)(243)))));
-            this.label2.Location = new System.Drawing.Point(15, 97);
+            this.label2.Location = new System.Drawing.Point(15, 96);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(112, 22);
             this.label2.TabIndex = 3;
@@ -78,7 +80,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Bookman Old Style", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(137)))), ((int)(((byte)(243)))));
-            this.label5.Location = new System.Drawing.Point(15, 269);
+            this.label5.Location = new System.Drawing.Point(15, 268);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(80, 22);
             this.label5.TabIndex = 6;
@@ -87,7 +89,7 @@
             // textBoxLastName
             // 
             this.textBoxLastName.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxLastName.Location = new System.Drawing.Point(19, 122);
+            this.textBoxLastName.Location = new System.Drawing.Point(19, 121);
             this.textBoxLastName.Name = "textBoxLastName";
             this.textBoxLastName.Size = new System.Drawing.Size(362, 23);
             this.textBoxLastName.TabIndex = 7;
@@ -95,7 +97,7 @@
             // textBoxFirstName
             // 
             this.textBoxFirstName.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxFirstName.Location = new System.Drawing.Point(19, 178);
+            this.textBoxFirstName.Location = new System.Drawing.Point(19, 177);
             this.textBoxFirstName.Name = "textBoxFirstName";
             this.textBoxFirstName.Size = new System.Drawing.Size(362, 23);
             this.textBoxFirstName.TabIndex = 9;
@@ -105,7 +107,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Bookman Old Style", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(137)))), ((int)(((byte)(243)))));
-            this.label3.Location = new System.Drawing.Point(15, 153);
+            this.label3.Location = new System.Drawing.Point(15, 152);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(117, 22);
             this.label3.TabIndex = 8;
@@ -114,7 +116,7 @@
             // textBoxMiddleName
             // 
             this.textBoxMiddleName.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxMiddleName.Location = new System.Drawing.Point(19, 238);
+            this.textBoxMiddleName.Location = new System.Drawing.Point(19, 237);
             this.textBoxMiddleName.Name = "textBoxMiddleName";
             this.textBoxMiddleName.Size = new System.Drawing.Size(362, 23);
             this.textBoxMiddleName.TabIndex = 11;
@@ -124,44 +126,44 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Bookman Old Style", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(137)))), ((int)(((byte)(243)))));
-            this.label4.Location = new System.Drawing.Point(15, 213);
+            this.label4.Location = new System.Drawing.Point(15, 212);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(134, 22);
             this.label4.TabIndex = 10;
             this.label4.Text = "Middle name";
             // 
-            // radioButton1
+            // rbtn_Male
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Bookman Old Style", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(137)))), ((int)(((byte)(243)))));
-            this.radioButton1.Location = new System.Drawing.Point(119, 271);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(60, 20);
-            this.radioButton1.TabIndex = 13;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Male";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rbtn_Male.AutoSize = true;
+            this.rbtn_Male.Font = new System.Drawing.Font("Bookman Old Style", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtn_Male.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(137)))), ((int)(((byte)(243)))));
+            this.rbtn_Male.Location = new System.Drawing.Point(119, 271);
+            this.rbtn_Male.Name = "rbtn_Male";
+            this.rbtn_Male.Size = new System.Drawing.Size(60, 20);
+            this.rbtn_Male.TabIndex = 13;
+            this.rbtn_Male.TabStop = true;
+            this.rbtn_Male.Text = "Male";
+            this.rbtn_Male.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // rbtn_Female
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("Bookman Old Style", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(137)))), ((int)(((byte)(243)))));
-            this.radioButton2.Location = new System.Drawing.Point(189, 271);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(76, 20);
-            this.radioButton2.TabIndex = 14;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Female";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rbtn_Female.AutoSize = true;
+            this.rbtn_Female.Font = new System.Drawing.Font("Bookman Old Style", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtn_Female.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(137)))), ((int)(((byte)(243)))));
+            this.rbtn_Female.Location = new System.Drawing.Point(194, 271);
+            this.rbtn_Female.Name = "rbtn_Female";
+            this.rbtn_Female.Size = new System.Drawing.Size(76, 20);
+            this.rbtn_Female.TabIndex = 14;
+            this.rbtn_Female.TabStop = true;
+            this.rbtn_Female.Text = "Female";
+            this.rbtn_Female.UseVisualStyleBackColor = true;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Bookman Old Style", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(137)))), ((int)(((byte)(243)))));
-            this.label6.Location = new System.Drawing.Point(15, 299);
+            this.label6.Location = new System.Drawing.Point(15, 298);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(135, 22);
             this.label6.TabIndex = 15;
@@ -172,8 +174,10 @@
             this.dtp_DateOfBirth.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(230)))), ((int)(((byte)(248)))));
             this.dtp_DateOfBirth.CalendarTitleBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(137)))), ((int)(((byte)(243)))));
             this.dtp_DateOfBirth.CalendarTitleForeColor = System.Drawing.SystemColors.HotTrack;
+            this.dtp_DateOfBirth.CustomFormat = "dd/MM/yyyy";
             this.dtp_DateOfBirth.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtp_DateOfBirth.Location = new System.Drawing.Point(19, 324);
+            this.dtp_DateOfBirth.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtp_DateOfBirth.Location = new System.Drawing.Point(19, 323);
             this.dtp_DateOfBirth.Name = "dtp_DateOfBirth";
             this.dtp_DateOfBirth.Size = new System.Drawing.Size(362, 23);
             this.dtp_DateOfBirth.TabIndex = 16;
@@ -183,19 +187,11 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Bookman Old Style", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(137)))), ((int)(((byte)(243)))));
-            this.label7.Location = new System.Drawing.Point(15, 357);
+            this.label7.Location = new System.Drawing.Point(15, 356);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(180, 22);
             this.label7.TabIndex = 17;
             this.label7.Text = "Program to Apply";
-            // 
-            // textBoxProgram
-            // 
-            this.textBoxProgram.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxProgram.Location = new System.Drawing.Point(19, 382);
-            this.textBoxProgram.Name = "textBoxProgram";
-            this.textBoxProgram.Size = new System.Drawing.Size(362, 23);
-            this.textBoxProgram.TabIndex = 18;
             // 
             // buttonRegister
             // 
@@ -214,6 +210,7 @@
             // 
             // panelTop
             // 
+            this.panelTop.Controls.Add(this.button2);
             this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTop.Location = new System.Drawing.Point(0, 0);
             this.panelTop.Name = "panelTop";
@@ -222,31 +219,6 @@
             this.panelTop.Paint += new System.Windows.Forms.PaintEventHandler(this.panelTop_Paint);
             this.panelTop.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTop_MouseDown);
             // 
-            // btn_adminLog
-            // 
-            this.btn_adminLog.BackgroundImage = global::StudentRegistrationApplication.Properties.Resources.profile;
-            this.btn_adminLog.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btn_adminLog.FlatAppearance.BorderSize = 0;
-            this.btn_adminLog.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_adminLog.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_adminLog.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_adminLog.Location = new System.Drawing.Point(554, 421);
-            this.btn_adminLog.Name = "btn_adminLog";
-            this.btn_adminLog.Size = new System.Drawing.Size(62, 34);
-            this.btn_adminLog.TabIndex = 23;
-            this.btn_adminLog.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_adminLog.UseVisualStyleBackColor = true;
-            this.btn_adminLog.Click += new System.EventHandler(this.btn_adminLog_Click);
-            // 
-            // Image1
-            // 
-            this.Image1.Location = new System.Drawing.Point(439, 94);
-            this.Image1.Name = "Image1";
-            this.Image1.Size = new System.Drawing.Size(290, 255);
-            this.Image1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Image1.TabIndex = 24;
-            this.Image1.TabStop = false;
-            // 
             // btn_ImageUp
             // 
             this.btn_ImageUp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(92)))), ((int)(((byte)(170)))));
@@ -254,24 +226,92 @@
             this.btn_ImageUp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_ImageUp.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_ImageUp.ForeColor = System.Drawing.Color.White;
-            this.btn_ImageUp.Location = new System.Drawing.Point(437, 371);
+            this.btn_ImageUp.Location = new System.Drawing.Point(437, 376);
             this.btn_ImageUp.Name = "btn_ImageUp";
             this.btn_ImageUp.Size = new System.Drawing.Size(294, 34);
             this.btn_ImageUp.TabIndex = 25;
-            this.btn_ImageUp.Text = "Upload image";
+            this.btn_ImageUp.Text = "Upload an image";
             this.btn_ImageUp.UseVisualStyleBackColor = false;
             this.btn_ImageUp.Click += new System.EventHandler(this.btn_ImageUp_Click);
             // 
-            // button1
+            // comboBoxProgram
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(230)))), ((int)(((byte)(248)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(92)))), ((int)(((byte)(170)))));
-            this.button1.Location = new System.Drawing.Point(437, 92);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(294, 259);
-            this.button1.TabIndex = 26;
-            this.button1.UseVisualStyleBackColor = false;
+            this.comboBoxProgram.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxProgram.ForeColor = System.Drawing.Color.Black;
+            this.comboBoxProgram.FormattingEnabled = true;
+            this.comboBoxProgram.Items.AddRange(new object[] {
+            "BSCS (Bachelor of Science in Computer Science)",
+            "BSIT (Bachelor of Science in Information Technology)",
+            "BSBA (Bachelor of Science in Business Administration)",
+            "BSA (Bachelor of Science in Accountancy)",
+            "BSTM (Bachelor of Science in Tourism Management)",
+            "BSCpE (Bachelor of Science in Computer Engineering)",
+            "BMMA (Bachelor of Multimedia Arts)",
+            "BACOMM (Bachelor of Aarts in Communication)",
+            "ACT (2-yr. Associate in Computer Technology)"});
+            this.comboBoxProgram.Location = new System.Drawing.Point(19, 381);
+            this.comboBoxProgram.Name = "comboBoxProgram";
+            this.comboBoxProgram.Size = new System.Drawing.Size(362, 24);
+            this.comboBoxProgram.TabIndex = 27;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Bahnschrift", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(137)))), ((int)(((byte)(243)))));
+            this.label8.Location = new System.Drawing.Point(156, 304);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(83, 14);
+            this.label8.TabIndex = 28;
+            this.label8.Text = "dd / MM / yyyy";
+            // 
+            // buttonLogin
+            // 
+            this.buttonLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(92)))), ((int)(((byte)(170)))));
+            this.buttonLogin.FlatAppearance.BorderSize = 0;
+            this.buttonLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonLogin.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonLogin.ForeColor = System.Drawing.Color.White;
+            this.buttonLogin.Location = new System.Drawing.Point(437, 421);
+            this.buttonLogin.Name = "buttonLogin";
+            this.buttonLogin.Size = new System.Drawing.Size(294, 34);
+            this.buttonLogin.TabIndex = 30;
+            this.buttonLogin.Text = "Login as admin";
+            this.buttonLogin.UseVisualStyleBackColor = false;
+            this.buttonLogin.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // circularPicBox1
+            // 
+            this.circularPicBox1.BackgroundImage = global::StudentRegistrationApplication.Properties.Resources.icons8_picture_220;
+            this.circularPicBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.circularPicBox1.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
+            this.circularPicBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(92)))), ((int)(((byte)(170)))));
+            this.circularPicBox1.BorderColor2 = System.Drawing.SystemColors.Highlight;
+            this.circularPicBox1.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.DashDotDot;
+            this.circularPicBox1.BorderSize = 10;
+            this.circularPicBox1.GradientAngle = 70F;
+            this.circularPicBox1.Location = new System.Drawing.Point(442, 82);
+            this.circularPicBox1.Name = "circularPicBox1";
+            this.circularPicBox1.Size = new System.Drawing.Size(283, 283);
+            this.circularPicBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.circularPicBox1.TabIndex = 29;
+            this.circularPicBox1.TabStop = false;
+            // 
+            // button2
+            // 
+            this.button2.BackgroundImage = global::StudentRegistrationApplication.Properties.Resources.icons8_close_24__2_;
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(721, 0);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(35, 24);
+            this.button2.TabIndex = 29;
+            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // StudentApp
             // 
@@ -279,16 +319,17 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(230)))), ((int)(((byte)(248)))));
             this.ClientSize = new System.Drawing.Size(756, 474);
+            this.Controls.Add(this.buttonLogin);
+            this.Controls.Add(this.circularPicBox1);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.comboBoxProgram);
             this.Controls.Add(this.btn_ImageUp);
-            this.Controls.Add(this.Image1);
-            this.Controls.Add(this.btn_adminLog);
             this.Controls.Add(this.buttonRegister);
-            this.Controls.Add(this.textBoxProgram);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.dtp_DateOfBirth);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
+            this.Controls.Add(this.rbtn_Female);
+            this.Controls.Add(this.rbtn_Male);
             this.Controls.Add(this.textBoxMiddleName);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.textBoxFirstName);
@@ -298,13 +339,13 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panelTop);
-            this.Controls.Add(this.button1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "StudentApp";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "StudentApp";
             this.Load += new System.EventHandler(this.StudentApp_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.Image1)).EndInit();
+            this.panelTop.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.circularPicBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -320,17 +361,18 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBoxMiddleName;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton rbtn_Male;
+        private System.Windows.Forms.RadioButton rbtn_Female;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.DateTimePicker dtp_DateOfBirth;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBoxProgram;
         private System.Windows.Forms.Button buttonRegister;
         private System.Windows.Forms.Panel panelTop;
-        private System.Windows.Forms.Button btn_adminLog;
-        private System.Windows.Forms.PictureBox Image1;
         private System.Windows.Forms.Button btn_ImageUp;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ComboBox comboBoxProgram;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button button2;
+        private CircularPicBox circularPicBox1;
+        private System.Windows.Forms.Button buttonLogin;
     }
 }
