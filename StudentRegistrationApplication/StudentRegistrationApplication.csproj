@@ -221,5 +221,17 @@
   <ItemGroup>
     <None Include="Resources\icons8-picture-220.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled_design-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-loginstudent-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg-wave-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg-wave1-removebg-preview.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -35,5 +35,10 @@ namespace StudentRegistrationApplication
         {
 
         }
+
+        private void LoadingFormAnimation_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -9,6 +9,8 @@ namespace StudentRegistrationApplication
 {
     internal static class Program
     {
+        private static registeredForm regForm;
+
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -17,7 +19,7 @@ namespace StudentRegistrationApplication
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new StudentApp());
+            Application.Run(mainForm: new adminlog(regForm));
         }
     }
 }
